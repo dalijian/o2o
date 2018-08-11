@@ -3,7 +3,7 @@
     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.lijian.o2o.dao.AreaDao">
-	<select id="queryArea" resultType="com.imooc.o2o.entity.Area">
+	<select id="queryArea" resultType="com.lijian.o2o.entity.Area">
 		SELECT area_id, area_name,
 		priority, create_time, last_edit_time
 		FROM tb_area
@@ -19,7 +19,7 @@
 		(#{areaName},#{areaDesc},#{priority},
 		#{createTime},#{lastEditTime})
 	</insert>
-	<update id="updateArea" parameterType="com.imooc.o2o.entity.Area">
+	<update id="updateArea" parameterType="com.lijian.o2o.entity.Area">
 		update tb_area
 		<set>
 			<if test="areaName != null">area_name=#{areaName},</if>

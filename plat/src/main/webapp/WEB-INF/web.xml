@@ -4,8 +4,8 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
 	id="WebApp_ID" version="3.0">
 
-	<web-app>
-		<display-name>Archetype Created Web Application</display-name>
+
+		<display-name>platform</display-name>
 		<servlet>
 			<servlet-name>spring-dispatcher</servlet-name>
 			<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
@@ -19,4 +19,5 @@
 			<!-- 默认匹配所有的请求 -->
 			<url-pattern>/</url-pattern>
 		</servlet-mapping>
-	</web-app>
+	
+</web-app>
