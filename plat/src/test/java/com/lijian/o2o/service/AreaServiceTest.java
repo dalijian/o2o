@@ -5,12 +5,13 @@ import java.util.List;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.lijian.o2o.dao.AreaDao;
+
 import com.lijian.o2o.dao.BaseTest;
 import com.lijian.o2o.entity.Area;
 
 import junit.framework.Assert;
 
+@SuppressWarnings("deprecation")
 public class AreaServiceTest extends BaseTest {
 	@Autowired
 	private AreaService areaService;
