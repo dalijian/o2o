@@ -1,6 +1,9 @@
 package com.lijian.o2o.service;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
 import java.util.Date;
 
 import org.junit.Test;
@@ -21,7 +24,7 @@ public class ShopServiceTest extends BaseTest {
 	private ShopService shopService;
 	
 	@Test
-	public void addShopTest(){
+	public void addShopTest() throws FileNotFoundException{
 		Shop shop = new Shop();
 		PersonInfo owner = new PersonInfo();
 		Area area = new Area();
@@ -44,7 +47,8 @@ public class ShopServiceTest extends BaseTest {
 		shop.setShopAddr("test");
 		
 		File shopImg = new File("src/test/resources/小黄人_1.jpeg");
-		ShopExecution se = shopService.addShop(shop, shopImg);
+		InputStream input = new FileInputStream(shopImg);
+		ShopExecution se = shopService.addShop(shop, input,shopImg.getName());
 //		Long shopId = shop.getShopId();
 //		System.out.println("shopId-->"+shopId);
 		Assert.assertEquals(ShopStateEnum.CHECK.getState(), se.getState());

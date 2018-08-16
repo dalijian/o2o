@@ -2,6 +2,7 @@ package com.lijian.o2o.util;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Random;
@@ -46,9 +47,9 @@ public class ImageUtil {
 	 * @param targetAddr
 	 * @return
 	 */
-	public  static String generateThumbnail(File thumbnail,String targetAddr){
+	public  static String generateThumbnail(InputStream thumbnail,String targetAddr,String fileName){
 		String realFileName=getRandomFileName();
-		String extension = getFileExtension(thumbnail);
+		String extension = getFileExtension(fileName);
 		makeDirPath(targetAddr);
 		
 		String relativeAddr = targetAddr+realFileName+extension;
@@ -78,9 +79,9 @@ public class ImageUtil {
 
 	}
 
-	private static String getFileExtension(File cFile) {
-		String originalFileName = cFile.getName();
-		return originalFileName.substring(originalFileName.lastIndexOf("."));
+	private static String getFileExtension(String fileName) {
+	
+		return fileName.substring(fileName.lastIndexOf("."));
 		
 
 	}

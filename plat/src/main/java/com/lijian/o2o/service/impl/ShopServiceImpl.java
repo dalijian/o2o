@@ -1,6 +1,6 @@
 package com.lijian.o2o.service.impl;
 
-import java.io.File;
+import java.io.InputStream;
 import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +22,7 @@ public class ShopServiceImpl implements ShopService {
 	private ShopDao shopDao;
 	@Override
 	@Transactional
-	public ShopExecution addShop(Shop shop, File shopImg) {
+	public ShopExecution addShop(Shop shop, InputStream shopImgInput,String fileName) {
 		if (shop == null) {
 			return new ShopExecution(ShopStateEnum.NULL_SHOP);// TODO
 		}
@@ -36,13 +36,13 @@ public class ShopServiceImpl implements ShopService {
 			if (effectedNum <= 0) {
 				throw new ShopOperationException("店铺创建失败");
 			} else {
-				if (shopImg != null) { //图片等于空的话 没有判断
+				if (shopImgInput != null) { //图片等于空的话 没有判断
 					// 存储图片
 					try {
 						//修改shop图片地址
-						addShopImg(shop, shopImg);
+						addshopImgInput(shop, shopImgInput,fileName);
 					} catch (Exception e) {
-						throw new ShopOperationException("addShopimg error:" + e.getMessage());
+						throw new ShopOperationException("addshopImgInput error:" + e.getMessage());
 					}
 					effectedNum = shopDao.updateShop(shop);
 					if (effectedNum <= 0) {
@@ -57,13 +57,13 @@ public class ShopServiceImpl implements ShopService {
 		
 
 	}
-	private void addShopImg(Shop shop, File shopImg) {
+	private void addshopImgInput(Shop shop, InputStream shopImgInput,String fileName) {
 		// 获取shop 图片目录的相对值路径
 		String desc = PathUtil.getShopImagePath(shop.getShopId());
 		//返回缩略   图片 相对路径
-		String shopImgAddr = ImageUtil.generateThumbnail(shopImg, desc);
+		String shopImgInputAddr = ImageUtil.generateThumbnail(shopImgInput, desc,fileName);
 		//设置图片地址
-		shop.setShopImg(shopImgAddr);
+		shop.setShopImg(shopImgInputAddr);
 
 	}
 

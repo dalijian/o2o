@@ -1,12 +1,12 @@
-2018-08-14 20:30:14.207[main] DEBUG com.lijian.o2o.dao.ShopDao.insertShop-==>  Preparing: INSERT INTO tb_shop(owner_id,area_id,shop_category_id,shop_name,shop_desc,shop_addr ,phone,shop_img,priority,create_time,last_edit_time,enable_status,advice) VALUES(?,?,?,?,?,? ,?,?,?,?,?,?,?) 
-2018-08-14 20:30:14.302[main] DEBUG com.lijian.o2o.dao.ShopDao.insertShop-==> Parameters: 1(Long), 2(Integer), 30(Long), 测试的店铺-11111(String), test(String), test(String), test(String), null, null, 2018-08-14 20:30:14.174(Timestamp), 2018-08-14 20:30:14.174(Timestamp), 0(Integer), 审核中(String)
-2018-08-14 20:30:14.305[main] DEBUG com.lijian.o2o.dao.ShopDao.insertShop-<==    Updates: 1
-2018-08-14 20:30:14.307[main] DEBUG com.lijian.o2o.dao.ShopDao.insertShop!selectKey-==>  Preparing: select LAST_INsert_ID(); 
-2018-08-14 20:30:14.308[main] DEBUG com.lijian.o2o.dao.ShopDao.insertShop!selectKey-==> Parameters: 
-2018-08-14 20:30:14.335[main] DEBUG com.lijian.o2o.dao.ShopDao.insertShop!selectKey-<==      Total: 1
-2018-08-14 20:34:14.582[main] DEBUG com.lijian.o2o.dao.ShopDao.insertShop-==>  Preparing: INSERT INTO tb_shop(owner_id,area_id,shop_category_id,shop_name,shop_desc,shop_addr ,phone,shop_img,priority,create_time,last_edit_time,enable_status,advice) VALUES(?,?,?,?,?,? ,?,?,?,?,?,?,?) 
-2018-08-14 20:34:14.685[main] DEBUG com.lijian.o2o.dao.ShopDao.insertShop-==> Parameters: 1(Long), 2(Integer), 30(Long), 测试的店铺-11111(String), test(String), test(String), test(String), null, null, 2018-08-14 20:34:14.55(Timestamp), 2018-08-14 20:34:14.55(Timestamp), 0(Integer), 审核中(String)
-2018-08-14 20:34:14.687[main] DEBUG com.lijian.o2o.dao.ShopDao.insertShop-<==    Updates: 1
-2018-08-14 20:34:14.689[main] DEBUG com.lijian.o2o.dao.ShopDao.insertShop!selectKey-==>  Preparing: select LAST_INsert_ID(); 
-2018-08-14 20:34:14.689[main] DEBUG com.lijian.o2o.dao.ShopDao.insertShop!selectKey-==> Parameters: 
-2018-08-14 20:34:14.717[main] DEBUG com.lijian.o2o.dao.ShopDao.insertShop!selectKey-<==      Total: 1
+2018-08-16 09:17:50.928[main] DEBUG c.lijian.o2o.dao.ShopCategoryDao.queryShopCategory-==>  Preparing: SELECT shop_category_id, shop_category_name, shop_category_desc, shop_category_img, priority, create_time, last_edit_time, parent_id FROM tb_shop_category ORDER BY priority DESC 
+2018-08-16 09:17:51.027[main] DEBUG c.lijian.o2o.dao.ShopCategoryDao.queryShopCategory-==> Parameters: 
+2018-08-16 09:17:51.085[main] DEBUG c.lijian.o2o.dao.ShopCategoryDao.queryShopCategory-<==      Total: 21
+2018-08-16 09:18:23.977[main] DEBUG c.lijian.o2o.dao.ShopCategoryDao.queryShopCategory-==>  Preparing: SELECT shop_category_id, shop_category_name, shop_category_desc, shop_category_img, priority, create_time, last_edit_time, parent_id FROM tb_shop_category ORDER BY priority DESC 
+2018-08-16 09:18:24.068[main] DEBUG c.lijian.o2o.dao.ShopCategoryDao.queryShopCategory-==> Parameters: 
+2018-08-16 09:18:24.110[main] DEBUG c.lijian.o2o.dao.ShopCategoryDao.queryShopCategory-<==      Total: 21
+2018-08-16 10:55:46.940[main] DEBUG c.lijian.o2o.dao.ShopCategoryDao.queryShopCategory-==>  Preparing: SELECT shop_category_id, shop_category_name, shop_category_desc, shop_category_img, priority, create_time, last_edit_time, parent_id FROM tb_shop_category ORDER BY priority DESC 
+2018-08-16 10:55:47.048[main] DEBUG c.lijian.o2o.dao.ShopCategoryDao.queryShopCategory-==> Parameters: 
+2018-08-16 10:55:47.111[main] DEBUG c.lijian.o2o.dao.ShopCategoryDao.queryShopCategory-<==      Total: 21
+2018-08-16 10:59:25.728[main] DEBUG c.lijian.o2o.dao.ShopCategoryDao.queryShopCategory-==>  Preparing: SELECT shop_category_id, shop_category_name, shop_category_desc, shop_category_img, priority, create_time, last_edit_time, parent_id FROM tb_shop_category ORDER BY priority DESC 
+2018-08-16 10:59:25.815[main] DEBUG c.lijian.o2o.dao.ShopCategoryDao.queryShopCategory-==> Parameters: 
+2018-08-16 10:59:25.860[main] DEBUG c.lijian.o2o.dao.ShopCategoryDao.queryShopCategory-<==      Total: 21
