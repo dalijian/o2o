@@ -8,6 +8,7 @@ import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 
+import com.lijian.o2o.util.CodeUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -31,7 +32,6 @@ import com.lijian.o2o.util.HttpServletRequestUtil;
 
 @Controller
 @RequestMapping("/shopadmin")
-
 public class ShopManagementController {
 
 	@Autowired
@@ -47,6 +47,9 @@ public class ShopManagementController {
 	@ResponseBody
 	private Map<String, Object> getShopInitInfo() {
 
+		/*
+		 * modelMap 返回的封装数据
+		 */
 		Map<String, Object> modelMap = new HashMap<String, Object>();
 		List<ShopCategory> shopCategoryList = new ArrayList<ShopCategory>();
 		List<Area> areaList = new ArrayList<Area>();
@@ -78,7 +81,12 @@ public class ShopManagementController {
 	private Map<String, Object> registerShop(HttpServletRequest request) {
 		// 返回注册信息结果 给前端
 		Map<String, Object> modelMap = new HashMap<String, Object>();
+		if (!CodeUtil.checkVerifyCode(request)) {
+			modelMap.put("success",false);
+			modelMap.put("errMsg", "输入了错误的验证码");
+			return modelMap;
 
+		}
 		String shopStr = HttpServletRequestUtil.getString(request, "shopStr");
 		// ObjectMapper mapper = new ObjectMapper();
 		Shop shop = null;
@@ -96,6 +104,7 @@ public class ShopManagementController {
 		CommonsMultipartFile shopImg = null;
 		CommonsMultipartResolver commonsMultipartResolver = new CommonsMultipartResolver(
 				request.getSession().getServletContext());
+
 		if (commonsMultipartResolver.isMultipart(request)) {
 			MultipartHttpServletRequest multipartHttpServletRequest = (MultipartHttpServletRequest) request;
 			shopImg = (CommonsMultipartFile) multipartHttpServletRequest.getFile("shopImg");
@@ -119,7 +128,7 @@ public class ShopManagementController {
 				// 检查返回值
 				if (se.getState() == ShopStateEnum.CHECK.getState()) {
 					modelMap.put("success", true);
-
+					return modelMap;
 				} else {
 					modelMap.put("success", false);
 					modelMap.put("errMsg", se.getStateInfo());
@@ -139,7 +148,7 @@ public class ShopManagementController {
 			return modelMap;
 
 		}
-		return null;
+	
 	}
 
 	/**

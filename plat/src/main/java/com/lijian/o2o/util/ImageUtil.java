@@ -51,6 +51,11 @@ public class ImageUtil {
 		String realFileName=getRandomFileName();
 		String extension = getFileExtension(fileName);
 		makeDirPath(targetAddr);
+//		logger.debug(thumbnail.read(new byte[1024])+"");
+		//由于相当路径 抛出 Can't read input file! Can't read input file!
+		//该用绝对路径 可以
+		
+		File waterFile = new File ("D:/watermark.jpg");
 		
 		String relativeAddr = targetAddr+realFileName+extension;
 		logger.debug("current relativeAddr is :"+ relativeAddr);
@@ -58,8 +63,10 @@ public class ImageUtil {
 		logger.debug("current complete addr is:"+PathUtil.getImgBasePath()+relativeAddr);
 		logger.debug("basePath is:"+basePath);
 		try{
+			/*Thumbnails.of(thumbnail).size(1000,1000)
+			.toFile(dest);*/
 			Thumbnails.of(thumbnail).size(1000, 1000)
-					.watermark(Positions.BOTTOM_LEFT, ImageIO.read(new File("src/test/resources/watermark.jpg")), 0.25f)
+					.watermark(Positions.BOTTOM_LEFT, ImageIO.read(waterFile), 0.25f)
 					.outputQuality(0.8f).toFile(dest);
 		
 		}catch(IOException e){

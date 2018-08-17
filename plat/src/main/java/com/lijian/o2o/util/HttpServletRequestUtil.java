@@ -36,7 +36,7 @@ public class HttpServletRequestUtil {
 			String result = request.getParameter(key);
 			if(result!=null){
 				result = result.trim();
-				
+				return result;
 			}
 			if("".equals(result)){
 				return null;
