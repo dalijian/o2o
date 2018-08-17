@@ -102,6 +102,22 @@ public class ImageUtil {
 		return newTimeStr + rannum;
 	}
 
+	public static void deleteFileOrPath(String storePath) {
+
+		File fileOrPath = new File(PathUtil.getImgBasePath() + storePath);
+		if (fileOrPath.exists()) {
+			if (fileOrPath.isDirectory()) {
+				for (File i : fileOrPath.listFiles()) {
+					i.delete();
+				}
+				fileOrPath.delete();
+			}
+			if (fileOrPath.isFile()) {
+				fileOrPath.delete();
+			}
+		}
+	}
+
 	public static void main(String[] args) throws IOException {
 
 		System.out.println("basePath-->" + basePath);

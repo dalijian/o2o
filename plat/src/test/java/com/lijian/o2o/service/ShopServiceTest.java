@@ -6,6 +6,8 @@ import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.util.Date;
 
+import com.lijian.o2o.dao.ShopDao;
+import com.lijian.o2o.exception.ShopOperationException;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -55,4 +57,15 @@ public class ShopServiceTest extends BaseTest {
 //		Assert.assertEquals(1, effectedNum);
 	}
 
+	@Test
+	public void modifyShopTest() throws FileNotFoundException ,ShopOperationException {
+		Shop shop = shopService.getByShopId(1L);
+		shop.setShopName("modifyShop");
+
+
+	ShopExecution shopExecution=	shopService.modifyShop(shop, new FileInputStream(new File("src/test/resources/Lighthouse.jpg")), "lighthouse.jpg");
+		System.out.println(shopExecution.getShop().getShopImg());
+
+
+	}
 }

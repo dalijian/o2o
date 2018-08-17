@@ -7,4 +7,5 @@ public interface ShopDao {
 
 	int updateShop(Shop shop);
 
+	Shop queryByShopId(Long id);
 }

@@ -35,7 +35,7 @@ public class ShopDaoTest extends BaseTest {
 		shop.setArea(area);
 		shop.setCreateTime(new Date());
 		shop.setAdvice("审核中");
-		shop.setShopName("测试的店铺");
+		shop.setShopName("lijain的店铺");
 		shop.setEnableStatus(1);
 		shop.setLastEditTime(new Date());
 		shop.setShopDesc("test");
@@ -74,6 +74,19 @@ public class ShopDaoTest extends BaseTest {
 		Long shopId = shop.getShopId();  //拿到update 更新主键值
 		System.out.println("shopId-->"+shopId);
 		Assert.assertEquals(1, effectedNum);
+
+	}
+	@Test
+	public void QueryShopByIdTest(){
+
+		Shop shop = shopDao.queryByShopId(1L);
+		System.out.println(shop);
+		int areaId = shop.getArea().getAreaId();
+		Long shopCategoryId = shop.getShopCategory().getShopCategoryId();
+
+		Assert.assertEquals(3,areaId);
+		Assert.assertEquals(java.util.Optional.of(14L).get(), shopCategoryId);
+
 
 	}
 

@@ -1,54 +1,110 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
-  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.lijian.o2o.dao.ShopDao">
 
-	<!-- <select id="getSomething" parameterType="int" resultType="#package.#modelname"> 
-		SELECT columnname1, columnname2, columnname3 FROM tablename1 WHERE columnname1 
-		= #{value} </select> <resultMap type="#modelname" id="YourResultSet"> <id 
-		property="param1" column="columnname1" /> <result property="param2" column="columnname2" 
-		/> <result property="param3" column="columnname3" /> </resultMap> <select 
-		id="getAll" resultMap="YourResultSet"> SELECT * FROM tablename1 </select> -->
-	<!-- useGeneratedKeys 拿到insert完成后拿到添加记录的id -->
-	<insert id="insertShop" useGeneratedKeys="true" keyColumn="shop_id"
-		keyProperty="shopId" parameterType="com.lijian.o2o.entity.Shop">
-		<!-- 拿到插入数据的主键值 -->
-		<selectKey keyProperty="shopId" resultType="long" order="AFTER">
-			select
-			LAST_INsert_ID();
-		</selectKey>
-		INSERT INTO
-		tb_shop(owner_id,area_id,shop_category_id,shop_name,shop_desc,shop_addr
-		,phone,shop_img,priority,create_time,last_edit_time,enable_status,advice)
-		VALUES(#{owner.userId},#{area.areaId},#{shopCategory.shopCategoryId},#{shopName},#{shopDesc},#{shopAddr}
-		,#{phone},#{shopImg},#{priority},#{createTime},#{lastEditTime},#{enableStatus},#{advice})
-	</insert>
+    <!-- <select id="getSomething" parameterType="int" resultType="#package.#modelname">
+        SELECT columnname1, columnname2, columnname3 FROM tablename1 WHERE columnname1
+        = #{value} </select> <resultMap type="#modelname" id="YourResultSet"> <id
+        property="param1" column="columnname1" /> <result property="param2" column="columnname2"
+        /> <result property="param3" column="columnname3" /> </resultMap> <select
+        id="getAll" resultMap="YourResultSet"> SELECT * FROM tablename1 </select> -->
+    <!-- useGeneratedKeys 拿到insert完成后拿到添加记录的id -->
+    <insert id="insertShop" useGeneratedKeys="true" keyColumn="shop_id"
+            keyProperty="shopId" parameterType="com.lijian.o2o.entity.Shop">
+        <!-- 拿到插入数据的主键值 -->
+        <selectKey keyProperty="shopId" resultType="long" order="AFTER">
+            select
+            LAST_INsert_ID();
+        </selectKey>
+        INSERT INTO
+        tb_shop(owner_id,area_id,shop_category_id,shop_name,shop_desc,shop_addr
+        ,phone,shop_img,priority,create_time,last_edit_time,enable_status,advice)
+        VALUES(#{owner.userId},#{area.areaId},#{shopCategory.shopCategoryId},#{shopName},#{shopDesc},#{shopAddr}
+        ,#{phone},#{shopImg},#{priority},#{createTime},#{lastEditTime},#{enableStatus},#{advice})
+    </insert>
 
-	<update id="updateShop" parameterType="com.lijian.o2o.entity.Shop">
-	
-		UPDATE tb_shop
-		<set>
-		<if test="shopName!=null">shop_name=#{shopName},</if>
-		<if test="shopDesc!=null">shop_desc=#{shopDesc},</if>
-		<if test="shopAddr!=null">shop_addr=#{shopAddr},</if>
-		<if test="phone!=null">phone=#{phone},</if>
-		<if test="shopImg!=null">shop_img=#{shopImg},</if>
-		<if test="priority!=null">priority=#{priority},</if>
-		<if test="createTime!=null">create_time=#{createTime},</if>
-		<if test="lastEditTime!=null">last_edit_time=#{lastEditTime},</if>
-		<if test="enableStatus!=null">enable_status=#{enableStatus},</if>
-		<if test="advice!=null">advice=#{advice}</if>
-		</set>
-	
-		WHERE
-		shop_id = #{shopId}
-	</update>
+    <update id="updateShop" parameterType="com.lijian.o2o.entity.Shop">
 
-	<!-- <delete id="deleteSomething" parameterType="int">
-		DELETE FROM
-		tablename1 WHERE
-		columnname1 = #{param1}
-	</delete> -->
+        UPDATE tb_shop
+        <set>
+            <if test="shopName!=null">shop_name=#{shopName},</if>
+            <if test="shopDesc!=null">shop_desc=#{shopDesc},</if>
+            <if test="shopAddr!=null">shop_addr=#{shopAddr},</if>
+            <if test="phone!=null">phone=#{phone},</if>
+            <if test="shopImg!=null">shop_img=#{shopImg},</if>
+            <if test="priority!=null">priority=#{priority},</if>
+            <if test="createTime!=null">create_time=#{createTime},</if>
+            <if test="lastEditTime!=null">last_edit_time=#{lastEditTime},</if>
+            <if test="enableStatus!=null">enable_status=#{enableStatus},</if>
+            <if test="advice!=null">advice=#{advice}</if>
+        </set>
+
+        WHERE
+        shop_id = #{shopId}
+    </update>
+    <select id="queryByShopId" parameterType="long" resultMap="shopMap">
+        select
+        s.shop_id,
+        s.shop_name,
+        s.shop_desc,
+        s.shop_addr,
+        s.phone,
+        s.shop_img,
+        s.priority,
+        s.create_time,
+        s.last_edit_time,
+        s.enable_status,
+        s.advice,
+        a.area_id,
+        a.area_name,
+        sc.shop_category_name,
+        sc.shop_category_id
+        from
+        tb_shop s,
+        tb_area a,
+        tb_shop_category sc
+        where
+        s.shop_category_id=sc.shop_category_id
+        and
+        s.area_id =a.area_id
+        and s.shop_id=#{shopId}
+
+
+
+    </select>
+
+    <resultMap type="com.lijian.o2o.entity.Shop" id="shopMap">
+        <id column="shop_id" property="shopId"/>
+        <result column="shop_name" property="shopName"></result>
+        <result column="shop_desc" property="shopDesc"></result>
+        <result column="shop_addr" property="shopAddr"></result>
+        <result column="phone" property="phone"></result>
+        <result column="shop_img" property="shopImg"></result>
+        <result column="priority" property="priority"></result>
+        <result column="create_time" property="createTime"></result>
+        <result column="last_edit_time" property="lastEditTime"></result>
+        <result column="aenable_status" property="enableStatus"></result>
+        <result column="advice" property="advice"></result>
+        <association property="area" column="area_id" javaType="com.lijian.o2o.entity.Area">
+            <id column="area_id" property="areaId"></id>
+            <result column="area_name" property="areaName"></result>
+        </association>
+        <association property="shopCategory" column="shop_category_id" javaType="com.lijian.o2o.entity.ShopCategory">
+            <id column="shop_category_id" property="shopCategoryId"></id>
+            <result column="shop_category_name" property="shopCategoryName"></result>
+        </association>
+        <association property="owner" column="user_id" javaType="com.lijian.o2o.entity.PersonInfo">
+            <id column="user_id" property="userId"></id>
+            <result column="name" property="name"></result>
+        </association>
+
+    </resultMap>
+    <!-- <delete id="deleteSomething" parameterType="int">
+        DELETE FROM
+        tablename1 WHERE
+        columnname1 = #{param1}
+    </delete> -->
 
 </mapper>
