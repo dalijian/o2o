@@ -1,15 +1,75 @@
-2018-08-20 11:22:30.261[main] DEBUG com.lijian.o2o.dao.ShopDao.queryByShopId-==>  Preparing: select s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_name, sc.shop_category_id from tb_shop s, tb_area a, tb_shop_category sc where s.shop_category_id=sc.shop_category_id and s.area_id =a.area_id and s.shop_id=? 
-2018-08-20 11:22:30.370[main] DEBUG com.lijian.o2o.dao.ShopDao.queryByShopId-==> Parameters: 79(Long)
-2018-08-20 11:22:30.415[main] DEBUG com.lijian.o2o.dao.ShopDao.queryByShopId-<==      Total: 1
-2018-08-20 11:23:21.398[main] DEBUG com.lijian.o2o.dao.ShopDao.queryByShopId-==>  Preparing: select s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_name, sc.shop_category_id from tb_shop s, tb_area a, tb_shop_category sc where s.shop_category_id=sc.shop_category_id and s.area_id =a.area_id and s.shop_id=? 
-2018-08-20 11:23:21.457[main] DEBUG com.lijian.o2o.dao.ShopDao.queryByShopId-==> Parameters: 79(Long)
-2018-08-20 11:23:21.484[main] DEBUG com.lijian.o2o.dao.ShopDao.queryByShopId-<==      Total: 1
-2018-08-20 11:30:37.409[main] DEBUG com.lijian.o2o.dao.ShopDao.queryByShopId-==>  Preparing: select s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_name, sc.shop_category_id from tb_shop s, tb_area a, tb_shop_category sc where s.shop_category_id=sc.shop_category_id and s.area_id =a.area_id and s.shop_id=? 
-2018-08-20 11:30:37.479[main] DEBUG com.lijian.o2o.dao.ShopDao.queryByShopId-==> Parameters: 79(Long)
-2018-08-20 11:30:37.507[main] DEBUG com.lijian.o2o.dao.ShopDao.queryByShopId-<==      Total: 1
-2018-08-20 11:31:29.185[main] DEBUG com.lijian.o2o.dao.ShopDao.queryByShopId-==>  Preparing: select s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_name, sc.shop_category_id from tb_shop s, tb_area a, tb_shop_category sc where s.shop_category_id=sc.shop_category_id and s.area_id =a.area_id and s.shop_id=? 
-2018-08-20 11:31:29.240[main] DEBUG com.lijian.o2o.dao.ShopDao.queryByShopId-==> Parameters: 79(Long)
-2018-08-20 11:31:29.271[main] DEBUG com.lijian.o2o.dao.ShopDao.queryByShopId-<==      Total: 1
-2018-08-20 11:33:35.172[main] DEBUG com.lijian.o2o.dao.ShopDao.queryByShopId-==>  Preparing: select s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_name, sc.shop_category_id from tb_shop s, tb_area a, tb_shop_category sc where s.shop_category_id=sc.shop_category_id and s.area_id =a.area_id and s.shop_id=? 
-2018-08-20 11:33:35.253[main] DEBUG com.lijian.o2o.dao.ShopDao.queryByShopId-==> Parameters: 79(Long)
-2018-08-20 11:33:35.294[main] DEBUG com.lijian.o2o.dao.ShopDao.queryByShopId-<==      Total: 1
+2018-08-21 00:01:01.275[main] DEBUG c.l.o.d.P.queryProductCategoryByShopId-==>  Preparing: select product_category_id, product_category_name, priority from tb_product_category where shop_id=? order by priority desc 
+2018-08-21 00:01:01.363[main] DEBUG c.l.o.d.P.queryProductCategoryByShopId-==> Parameters: 28(Long)
+2018-08-21 00:01:01.395[main] DEBUG c.l.o.d.P.queryProductCategoryByShopId-<==      Total: 5
+2018-08-21 00:01:01.407[main] DEBUG c.l.o.dao.ProductCategoryDao.deleteProductCategory-==>  Preparing: delete from tb_product_category where product_category_id=? and shop_id=?; 
+2018-08-21 00:01:01.408[main] DEBUG c.l.o.dao.ProductCategoryDao.deleteProductCategory-==> Parameters: 10(Long), 79(Long)
+2018-08-21 00:01:01.410[main] DEBUG c.l.o.dao.ProductCategoryDao.deleteProductCategory-<==    Updates: 0
+2018-08-21 00:01:01.410[main] DEBUG c.l.o.dao.ProductCategoryDao.deleteProductCategory-==>  Preparing: delete from tb_product_category where product_category_id=? and shop_id=?; 
+2018-08-21 00:01:01.411[main] DEBUG c.l.o.dao.ProductCategoryDao.deleteProductCategory-==> Parameters: 13(Long), 79(Long)
+2018-08-21 00:01:01.412[main] DEBUG c.l.o.dao.ProductCategoryDao.deleteProductCategory-<==    Updates: 0
+2018-08-21 00:01:01.483[main] DEBUG c.l.o.d.P.batchInsertProductCategory-==>  Preparing: insert into tb_product_category(product_category_name,priority,create_time,shop_id) values ( ?, ?, ?, ? ) , ( ?, ?, ?, ? ) 
+2018-08-21 00:01:01.488[main] DEBUG c.l.o.d.P.batchInsertProductCategory-==> Parameters: 鸡块(String), 20(Integer), 2018-08-21 00:01:01.427(Timestamp), 79(Long), 鸡腿(String), 21(Integer), 2018-08-21 00:01:01.427(Timestamp), 79(Long)
+2018-08-21 00:01:01.492[main] DEBUG c.l.o.d.P.batchInsertProductCategory-<==    Updates: 2
+2018-08-21 00:01:01.497[main] DEBUG c.l.o.d.P.queryProductCategoryByShopId-==>  Preparing: select product_category_id, product_category_name, priority from tb_product_category where shop_id=? order by priority desc 
+2018-08-21 00:01:01.497[main] DEBUG c.l.o.d.P.queryProductCategoryByShopId-==> Parameters: 28(Long)
+2018-08-21 00:01:01.503[main] DEBUG c.l.o.d.P.queryProductCategoryByShopId-<==      Total: 5
+2018-08-21 00:02:40.224[main] DEBUG c.l.o.d.P.batchInsertProductCategory-==>  Preparing: insert into tb_product_category(product_category_name,priority,create_time,shop_id) values ( ?, ?, ?, ? ) , ( ?, ?, ?, ? ) 
+2018-08-21 00:02:40.303[main] DEBUG c.l.o.d.P.batchInsertProductCategory-==> Parameters: 鸡块(String), 20(Integer), 2018-08-21 00:02:39.539(Timestamp), 79(Long), 鸡腿(String), 21(Integer), 2018-08-21 00:02:39.539(Timestamp), 79(Long)
+2018-08-21 00:02:40.311[main] DEBUG c.l.o.d.P.batchInsertProductCategory-<==    Updates: 2
+2018-08-21 00:02:40.328[main] DEBUG c.l.o.d.P.queryProductCategoryByShopId-==>  Preparing: select product_category_id, product_category_name, priority from tb_product_category where shop_id=? order by priority desc 
+2018-08-21 00:02:40.329[main] DEBUG c.l.o.d.P.queryProductCategoryByShopId-==> Parameters: 28(Long)
+2018-08-21 00:02:40.348[main] DEBUG c.l.o.d.P.queryProductCategoryByShopId-<==      Total: 5
+2018-08-21 00:02:40.358[main] DEBUG c.l.o.dao.ProductCategoryDao.deleteProductCategory-==>  Preparing: delete from tb_product_category where product_category_id=? and shop_id=?; 
+2018-08-21 00:02:40.359[main] DEBUG c.l.o.dao.ProductCategoryDao.deleteProductCategory-==> Parameters: 10(Long), 79(Long)
+2018-08-21 00:02:40.361[main] DEBUG c.l.o.dao.ProductCategoryDao.deleteProductCategory-<==    Updates: 0
+2018-08-21 00:02:40.362[main] DEBUG c.l.o.dao.ProductCategoryDao.deleteProductCategory-==>  Preparing: delete from tb_product_category where product_category_id=? and shop_id=?; 
+2018-08-21 00:02:40.363[main] DEBUG c.l.o.dao.ProductCategoryDao.deleteProductCategory-==> Parameters: 13(Long), 79(Long)
+2018-08-21 00:02:40.365[main] DEBUG c.l.o.dao.ProductCategoryDao.deleteProductCategory-<==    Updates: 0
+2018-08-21 00:02:40.377[main] DEBUG c.l.o.d.P.queryProductCategoryByShopId-==>  Preparing: select product_category_id, product_category_name, priority from tb_product_category where shop_id=? order by priority desc 
+2018-08-21 00:02:40.378[main] DEBUG c.l.o.d.P.queryProductCategoryByShopId-==> Parameters: 28(Long)
+2018-08-21 00:02:40.383[main] DEBUG c.l.o.d.P.queryProductCategoryByShopId-<==      Total: 5
+2018-08-21 00:11:39.251[main] DEBUG c.l.o.d.P.batchInsertProductCategory-==>  Preparing: insert into tb_product_category(product_category_name,priority,create_time,shop_id) values ( ?, ?, ?, ? ) , ( ?, ?, ?, ? ) 
+2018-08-21 00:11:39.337[main] DEBUG c.l.o.d.P.batchInsertProductCategory-==> Parameters: 鸡块(String), 20(Integer), 2018-08-21 00:11:38.432(Timestamp), 79(Long), 鸡腿(String), 21(Integer), 2018-08-21 00:11:38.432(Timestamp), 79(Long)
+2018-08-21 00:11:39.344[main] DEBUG c.l.o.d.P.batchInsertProductCategory-<==    Updates: 2
+2018-08-21 00:11:39.358[main] DEBUG c.l.o.d.P.queryProductCategoryByShopId-==>  Preparing: select product_category_id, product_category_name, priority from tb_product_category where shop_id=? order by priority desc 
+2018-08-21 00:11:39.359[main] DEBUG c.l.o.d.P.queryProductCategoryByShopId-==> Parameters: 79(Long)
+2018-08-21 00:11:39.381[main] DEBUG c.l.o.d.P.queryProductCategoryByShopId-<==      Total: 9
+2018-08-21 00:11:39.392[main] DEBUG c.l.o.dao.ProductCategoryDao.deleteProductCategory-==>  Preparing: delete from tb_product_category where product_category_id=? and shop_id=?; 
+2018-08-21 00:11:39.393[main] DEBUG c.l.o.dao.ProductCategoryDao.deleteProductCategory-==> Parameters: 11(Long), 79(Long)
+2018-08-21 00:11:39.396[main] DEBUG c.l.o.dao.ProductCategoryDao.deleteProductCategory-<==    Updates: 1
+2018-08-21 00:11:39.396[main] DEBUG c.l.o.dao.ProductCategoryDao.deleteProductCategory-==>  Preparing: delete from tb_product_category where product_category_id=? and shop_id=?; 
+2018-08-21 00:11:39.397[main] DEBUG c.l.o.dao.ProductCategoryDao.deleteProductCategory-==> Parameters: 18(Long), 79(Long)
+2018-08-21 00:11:39.401[main] DEBUG c.l.o.dao.ProductCategoryDao.deleteProductCategory-<==    Updates: 1
+2018-08-21 00:11:39.402[main] DEBUG c.l.o.dao.ProductCategoryDao.deleteProductCategory-==>  Preparing: delete from tb_product_category where product_category_id=? and shop_id=?; 
+2018-08-21 00:11:39.403[main] DEBUG c.l.o.dao.ProductCategoryDao.deleteProductCategory-==> Parameters: 20(Long), 79(Long)
+2018-08-21 00:11:39.406[main] DEBUG c.l.o.dao.ProductCategoryDao.deleteProductCategory-<==    Updates: 1
+2018-08-21 00:11:39.407[main] DEBUG c.l.o.dao.ProductCategoryDao.deleteProductCategory-==>  Preparing: delete from tb_product_category where product_category_id=? and shop_id=?; 
+2018-08-21 00:11:39.407[main] DEBUG c.l.o.dao.ProductCategoryDao.deleteProductCategory-==> Parameters: 22(Long), 79(Long)
+2018-08-21 00:11:39.410[main] DEBUG c.l.o.dao.ProductCategoryDao.deleteProductCategory-<==    Updates: 1
+2018-08-21 00:11:39.411[main] DEBUG c.l.o.dao.ProductCategoryDao.deleteProductCategory-==>  Preparing: delete from tb_product_category where product_category_id=? and shop_id=?; 
+2018-08-21 00:11:39.412[main] DEBUG c.l.o.dao.ProductCategoryDao.deleteProductCategory-==> Parameters: 17(Long), 79(Long)
+2018-08-21 00:11:39.415[main] DEBUG c.l.o.dao.ProductCategoryDao.deleteProductCategory-<==    Updates: 1
+2018-08-21 00:11:39.416[main] DEBUG c.l.o.dao.ProductCategoryDao.deleteProductCategory-==>  Preparing: delete from tb_product_category where product_category_id=? and shop_id=?; 
+2018-08-21 00:11:39.416[main] DEBUG c.l.o.dao.ProductCategoryDao.deleteProductCategory-==> Parameters: 19(Long), 79(Long)
+2018-08-21 00:11:39.419[main] DEBUG c.l.o.dao.ProductCategoryDao.deleteProductCategory-<==    Updates: 1
+2018-08-21 00:11:39.420[main] DEBUG c.l.o.dao.ProductCategoryDao.deleteProductCategory-==>  Preparing: delete from tb_product_category where product_category_id=? and shop_id=?; 
+2018-08-21 00:11:39.421[main] DEBUG c.l.o.dao.ProductCategoryDao.deleteProductCategory-==> Parameters: 21(Long), 79(Long)
+2018-08-21 00:11:39.424[main] DEBUG c.l.o.dao.ProductCategoryDao.deleteProductCategory-<==    Updates: 1
+2018-08-21 00:11:39.427[main] DEBUG c.l.o.d.P.queryProductCategoryByShopId-==>  Preparing: select product_category_id, product_category_name, priority from tb_product_category where shop_id=? order by priority desc 
+2018-08-21 00:11:39.427[main] DEBUG c.l.o.d.P.queryProductCategoryByShopId-==> Parameters: 28(Long)
+2018-08-21 00:11:39.431[main] DEBUG c.l.o.d.P.queryProductCategoryByShopId-<==      Total: 5
+2018-08-21 00:12:22.282[main] DEBUG c.l.o.d.P.batchInsertProductCategory-==>  Preparing: insert into tb_product_category(product_category_name,priority,create_time,shop_id) values ( ?, ?, ?, ? ) , ( ?, ?, ?, ? ) 
+2018-08-21 00:12:22.377[main] DEBUG c.l.o.d.P.batchInsertProductCategory-==> Parameters: 鸡块(String), 20(Integer), 2018-08-21 00:12:21.633(Timestamp), 79(Long), 鸡腿(String), 21(Integer), 2018-08-21 00:12:21.633(Timestamp), 79(Long)
+2018-08-21 00:12:22.384[main] DEBUG c.l.o.d.P.batchInsertProductCategory-<==    Updates: 2
+2018-08-21 00:12:22.403[main] DEBUG c.l.o.d.P.queryProductCategoryByShopId-==>  Preparing: select product_category_id, product_category_name, priority from tb_product_category where shop_id=? order by priority desc 
+2018-08-21 00:12:22.404[main] DEBUG c.l.o.d.P.queryProductCategoryByShopId-==> Parameters: 79(Long)
+2018-08-21 00:12:22.425[main] DEBUG c.l.o.d.P.queryProductCategoryByShopId-<==      Total: 4
+2018-08-21 00:12:22.436[main] DEBUG c.l.o.dao.ProductCategoryDao.deleteProductCategory-==>  Preparing: delete from tb_product_category where product_category_id=? and shop_id=?; 
+2018-08-21 00:12:22.437[main] DEBUG c.l.o.dao.ProductCategoryDao.deleteProductCategory-==> Parameters: 24(Long), 79(Long)
+2018-08-21 00:12:22.440[main] DEBUG c.l.o.dao.ProductCategoryDao.deleteProductCategory-<==    Updates: 1
+2018-08-21 00:12:22.440[main] DEBUG c.l.o.dao.ProductCategoryDao.deleteProductCategory-==>  Preparing: delete from tb_product_category where product_category_id=? and shop_id=?; 
+2018-08-21 00:12:22.441[main] DEBUG c.l.o.dao.ProductCategoryDao.deleteProductCategory-==> Parameters: 23(Long), 79(Long)
+2018-08-21 00:12:22.444[main] DEBUG c.l.o.dao.ProductCategoryDao.deleteProductCategory-<==    Updates: 1
+2018-08-21 00:12:22.447[main] DEBUG c.l.o.d.P.queryProductCategoryByShopId-==>  Preparing: select product_category_id, product_category_name, priority from tb_product_category where shop_id=? order by priority desc 
+2018-08-21 00:12:22.448[main] DEBUG c.l.o.d.P.queryProductCategoryByShopId-==> Parameters: 28(Long)
+2018-08-21 00:12:22.452[main] DEBUG c.l.o.d.P.queryProductCategoryByShopId-<==      Total: 5

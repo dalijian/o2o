@@ -1,0 +1,171 @@
+{
+	"shopCategoryList": [
+		{
+			"shopCategoryId": 14,
+			"shopCategoryName": "旧车",
+			"shopCategoryDesc": "旧车",
+			"shopCategoryImg": "/upload/images/item/shopcategory/2017060420315183203.png",
+			"priority": 80,
+			"createTime": 1496579511000,
+			"lastEditTime": 1496579511000,
+			"parent": null
+		},
+		{
+			"shopCategoryId": 15,
+			"shopCategoryName": "二手书籍",
+			"shopCategoryDesc": "二手书籍",
+			"shopCategoryImg": "/upload/images/item/shopcategory/2017060420322333745.png",
+			"priority": 79,
+			"createTime": 1496579543000,
+			"lastEditTime": 1496579543000,
+			"parent": null
+		},
+		{
+			"shopCategoryId": 17,
+			"shopCategoryName": "护理",
+			"shopCategoryDesc": "护理",
+			"shopCategoryImg": "/upload/images/item/shopcategory/2017060420372391702.png",
+			"priority": 76,
+			"createTime": 1496579843000,
+			"lastEditTime": 1496579843000,
+			"parent": null
+		},
+		{
+			"shopCategoryId": 18,
+			"shopCategoryName": "理发",
+			"shopCategoryDesc": "理发",
+			"shopCategoryImg": "/upload/images/item/shopcategory/2017060420374775350.png",
+			"priority": 74,
+			"createTime": 1496579867000,
+			"lastEditTime": 1496579867000,
+			"parent": null
+		},
+		{
+			"shopCategoryId": 20,
+			"shopCategoryName": "大排档",
+			"shopCategoryDesc": "大排档",
+			"shopCategoryImg": "/upload/images/item/shopcategory/2017060420460491494.png",
+			"priority": 59,
+			"createTime": 1496580364000,
+			"lastEditTime": 1496580364000,
+			"parent": null
+		},
+		{
+			"shopCategoryId": 22,
+			"shopCategoryName": "奶茶店",
+			"shopCategoryDesc": "奶茶店",
+			"shopCategoryImg": "/upload/images/item/shopcategory/2017060420464594520.png",
+			"priority": 58,
+			"createTime": 1496580405000,
+			"lastEditTime": 1496580405000,
+			"parent": null
+		},
+		{
+			"shopCategoryId": 25,
+			"shopCategoryName": "KTV",
+			"shopCategoryDesc": "KTV",
+			"shopCategoryImg": "/upload/images/item/shopcategory/2017060420505834244.png",
+			"priority": 57,
+			"createTime": 1496580658000,
+			"lastEditTime": 1496580674000,
+			"parent": null
+		},
+		{
+			"shopCategoryId": 24,
+			"shopCategoryName": "密室逃生",
+			"shopCategoryDesc": "密室逃生",
+			"shopCategoryImg": "/upload/images/item/shopcategory/2017060420500783376.png",
+			"priority": 56,
+			"createTime": 1496580607000,
+			"lastEditTime": 1496583953000,
+			"parent": null
+		},
+		{
+			"shopCategoryId": 29,
+			"shopCategoryName": "程序设计",
+			"shopCategoryDesc": "程序设计",
+			"shopCategoryImg": "/upload/images/item/shopcategory/2017060421593496807.png",
+			"priority": 50,
+			"createTime": 1496584774000,
+			"lastEditTime": 1496584774000,
+			"parent": null
+		},
+		{
+			"shopCategoryId": 30,
+			"shopCategoryName": "声乐舞蹈",
+			"shopCategoryDesc": "声乐舞蹈",
+			"shopCategoryImg": "/upload/images/item/shopcategory/2017060421595843693.png",
+			"priority": 49,
+			"createTime": 1496584798000,
+			"lastEditTime": 1496584798000,
+			"parent": null
+		},
+		{
+			"shopCategoryId": 31,
+			"shopCategoryName": "演出道具",
+			"shopCategoryDesc": "演出道具",
+			"shopCategoryImg": "/upload/images/item/shopcategory/2017060422114076152.png",
+			"priority": 45,
+			"createTime": 1496585500000,
+			"lastEditTime": 1496585500000,
+			"parent": null
+		},
+		{
+			"shopCategoryId": 32,
+			"shopCategoryName": "交通工具",
+			"shopCategoryDesc": "交通工具",
+			"shopCategoryImg": "/upload/images/item/shopcategory/2017060422121144586.png",
+			"priority": 44,
+			"createTime": 1496585531000,
+			"lastEditTime": 1496585531000,
+			"parent": null
+		},
+		{
+			"shopCategoryId": 33,
+			"shopCategoryName": "test1",
+			"shopCategoryDesc": "",
+			"shopCategoryImg": null,
+			"priority": 0,
+			"createTime": null,
+			"lastEditTime": null,
+			"parent": null
+		},
+		{
+			"shopCategoryId": 34,
+			"shopCategoryName": "test2",
+			"shopCategoryDesc": "",
+			"shopCategoryImg": null,
+			"priority": 0,
+			"createTime": null,
+			"lastEditTime": null,
+			"parent": null
+		},
+		{
+			"shopCategoryId": 35,
+			"shopCategoryName": "test3",
+			"shopCategoryDesc": "",
+			"shopCategoryImg": null,
+			"priority": 0,
+			"createTime": null,
+			"lastEditTime": null,
+			"parent": null
+		}
+	],
+	"success": true,
+	"areaList": [
+		{
+			"areaId": 3,
+			"areaName": "西苑",
+			"priority": 2,
+			"createTime": null,
+			"lastEditTime": null
+		},
+		{
+			"areaId": 2,
+			"areaName": "东苑",
+			"priority": 1,
+			"createTime": null,
+			"lastEditTime": null
+		}
+	]
+}

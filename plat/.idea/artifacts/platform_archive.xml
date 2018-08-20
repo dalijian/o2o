@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="platform archive">
+    <output-path>$PROJECT_DIR$/classes/artifacts/platform_archive</output-path>
+    <root id="archive" name="platform archive.war">
+      <element id="artifact" artifact-name="platform" />
+    </root>
+  </artifact>
+</component>
