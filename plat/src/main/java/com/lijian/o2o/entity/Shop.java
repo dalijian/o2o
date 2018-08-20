@@ -3,7 +3,7 @@ package com.lijian.o2o.entity;
 import java.util.Date;
 
 /**
- * 店铺实体�?
+ * 店铺实体�?
  * 
  * @author xiangze
  *
@@ -13,7 +13,7 @@ public class Shop {
 	private Long shopId;
 	// 店铺名称
 	private String shopName;
-	// 店铺�?�?
+	// 店铺�?�?
 	private String shopDesc;
 	// 店铺地址
 	private String shopAddr;
@@ -25,13 +25,13 @@ public class Shop {
 	private Integer priority;
 	// 创建时间
 	private Date createTime;
-	// �?近一次更新的时间
+	// �?近一次更新的时间
 	private Date lastEditTime;
-	// -1.不可�? 0.审核�? 1.可用
+	// -1.不可�? 0.审核�? 1.可用
 	private Integer enableStatus;
-	// 超级管理员给店家的提醒，包括为什么审核不通过�?
+	// 超级管理员给店家的提醒，包括为什么审核不通过�?
 	private String advice;
-	// 店铺�?属区�?
+	// 店铺�?属区�?
 	private Area area;
 	// 店铺是属于哪个店家的
 	private PersonInfo owner;
@@ -148,6 +148,14 @@ public class Shop {
 
 	public void setShopCategory(ShopCategory shopCategory) {
 		this.shopCategory = shopCategory;
+	}
+
+	@Override
+	public String toString() {
+		return "Shop [shopId=" + shopId + ", shopName=" + shopName + ", shopDesc=" + shopDesc + ", shopAddr=" + shopAddr
+				+ ", phone=" + phone + ", shopImg=" + shopImg + ", priority=" + priority + ", createTime=" + createTime
+				+ ", lastEditTime=" + lastEditTime + ", enableStatus=" + enableStatus + ", advice=" + advice + ", area="
+				+ area + ", owner=" + owner + ", shopCategory=" + shopCategory + "]";
 	}
 
 }

@@ -12,4 +12,13 @@ public interface ShopService  {
 
 	ShopExecution modifyShop(Shop shop, InputStream inputStream, String fileName);
 
+	/**
+	 * 根据分页返回数据
+	 * @param shopCondition
+	 * @param pageIndex
+	 * @param pageSize
+	 * @return
+	 */
+	ShopExecution getShopList(Shop shopCondition,int pageIndex,int pageSize);
+
 }
