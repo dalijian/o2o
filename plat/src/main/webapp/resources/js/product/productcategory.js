@@ -27,13 +27,13 @@ function getList() {
 
 function handleList(productList) {
     productList.map(function (item, index) {
-        var $html = $(`<div class= "row row-shop">
+        var $html = $(`<div class= "row row-shop now">
             <div class="col-40">${item.productCategoryName}</div>
             <div class="col-40">${item.priority}</div>
             <div class="col-20">${delCatogory(item.productCategoryId)}</div>
             </div>`);
 
-        $html.appendTo('.shop-wrap');
+        $html.appendTo('.category-wrap');
 
     })
 };
@@ -42,7 +42,7 @@ function handleList(productList) {
 删除分类
  */
 function delCatogory(productcategoryId) {
-    return `<a href="/platform/productadmin/productcategorydelete?productcategoryId=${productcategoryId}">删除</a>`;
+    return `<a class="delete button"href="#" data-id="${productcategoryId}">删除</a>`;
 }
 
 /*
@@ -52,9 +52,9 @@ function addBatchProductCategory() {
     var $newProductCategory = $(`<div class="row temp">
       <div class="col-33"><input type="text" name="product_category_name" id="product_category_name" placeholder="商品分类名"></div>
       <div class="col-33"><input type="number" name="product_category_priority" id="product_category_priority" placeholder="优先级"></div>
-      <div class="col-33"></div>
+      <div class="col-33"><a href="javascript:void(0)" class="delete button">删除</a></div>
     </div>`);
-    $newProductCategory.appendTo('.shop-wrap');
+    $newProductCategory.appendTo('.category-wrap');
 
 }
 
@@ -72,7 +72,7 @@ function submitProductCategory() {
         success: function (data) {
             if (data.success) {
                 $.toast('提交成功！');
-                $(".shop-wrap").empty();
+                $(".category-wrap").empty();
                 getList();
             } else {
                 $.toast('提交失败！');
@@ -81,7 +81,9 @@ function submitProductCategory() {
     });
 
 }
-
+/*
+拿到批量添加的数据
+ */
 function getAddProductCategoryList() {
 
     var tempArr = $('.temp');
@@ -98,13 +100,13 @@ function getAddProductCategoryList() {
     return productCategoryList;
 }
 
-$(".category-wrap").on("click", "",
+$(".category-wrap").on("click", ".row.temp .delete",
     function (e) {
         console.log($(this).parent().parent());
-        $(this.parent().parent().remove());
+        $(this).parent().parent().remove();
 
     });
-$(".category-wrap").on("click", " ",
+$(".category-wrap").on("click", ".row.now .delete",
 
 function (e) {
     var target =e.currentTarget;
@@ -119,6 +121,8 @@ function (e) {
             success: function (data) {
                 if (data.success) {
                     $.toast("删除成功");
+                    $(".category-wrap").empty();
+                    getList();
                 }else {
                     $.toast("删除失败");
                 }
@@ -128,4 +132,4 @@ function (e) {
 
     });
 
-}
+});

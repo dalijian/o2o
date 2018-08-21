@@ -46,12 +46,12 @@
 <insert id="batchInsertProductCategory" parameterType="list">
 	insert into tb_product_category(product_category_name,priority,create_time,shop_id)
 	values
-	<foreach collection="list" item="productCategory" separator=",">
+	<foreach collection="list" item="productImg" separator=",">
 		(
-		#{productCategory.productCategoryName},
-		#{productCategory.priority},
-		#{productCategory.createTime},
-		#{productCategory.shopId}
+		#{productImg.productCategoryName},
+		#{productImg.priority},
+		#{productImg.createTime},
+		#{productImg.shopId}
 		)
 	</foreach>
 </insert>
