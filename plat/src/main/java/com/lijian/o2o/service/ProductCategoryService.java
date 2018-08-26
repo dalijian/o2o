@@ -8,10 +8,16 @@ import com.lijian.o2o.exception.ProductCategoryOperationException;
 import java.util.List;
 
 public interface ProductCategoryService {
-List<ProductCategory> getProductCategoryList(ShopCategory shopCategoryCondition);
-List<ProductCategory> getProductCategoryListByShopId(Long shopId);
 
-    int  delProductCategory(Long productCategoryId);
+
+    List<ProductCategory> getProductCategoryList(ShopCategory shopCategoryCondition);
+
+
+
+    //拿到店铺的所用商品分类
+    List<ProductCategory> getProductCategoryListByShopId(Long shopId);
+
+    int delProductCategory(Long productCategoryId);
 
     ProductCategoryExecution batchAddProductCategory(List<ProductCategory> productCategoryList) throws ProductCategoryOperationException;
 

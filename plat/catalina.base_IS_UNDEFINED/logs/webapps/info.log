@@ -1,0 +1,4 @@
+2018-08-26 15:51:26.187[main] INFO  com.lijian.o2o.service.ProductServiceTest-\upload\images\item\shop\79\2018082615512573633.jpg
+2018-08-26 15:51:26.201[main] INFO  com.lijian.o2o.service.ProductServiceTest-\upload\images\item\shop\79\2018082615512528438.jpg
+2018-08-26 23:00:24.808[main] INFO  com.lijian.o2o.dao.ProductDaoTest-[com.lijian.o2o.entity.Product@ee86bcb, com.lijian.o2o.entity.Product@177bea38, com.lijian.o2o.entity.Product@7f132176, com.lijian.o2o.entity.Product@6bca7e0d]
+2018-08-26 23:03:12.237[main] INFO  com.lijian.o2o.dao.ProductDaoTest-5

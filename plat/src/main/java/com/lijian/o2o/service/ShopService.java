@@ -4,13 +4,14 @@ import java.io.InputStream;
 
 import com.lijian.o2o.dto.ShopExecution;
 import com.lijian.o2o.entity.Shop;
+import com.lijian.o2o.util.ImageHolder;
 
 public interface ShopService  {
-	ShopExecution addShop(Shop shop, InputStream input, String fileName);
+	ShopExecution addShop(Shop shop, ImageHolder imageHolder);
 
 	Shop getByShopId(Long id);
 
-	ShopExecution modifyShop(Shop shop, InputStream inputStream, String fileName);
+	ShopExecution modifyShop(Shop shop, ImageHolder imageHolder);
 
 	/**
 	 * 根据分页返回数据

@@ -4,6 +4,7 @@ import java.io.InputStream;
 import java.util.Date;
 import java.util.List;
 
+import com.lijian.o2o.util.ImageHolder;
 import com.lijian.o2o.util.PageCalculator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -24,7 +25,7 @@ public class ShopServiceImpl implements ShopService {
 	private ShopDao shopDao;
 	@Override
 	@Transactional
-	public ShopExecution addShop(Shop shop, InputStream shopImgInput,String fileName) {
+	public ShopExecution addShop(Shop shop,ImageHolder imageHolder) {
 		if (shop == null) {
 			return new ShopExecution(ShopStateEnum.NULL_SHOP);// TODO
 		}
@@ -39,11 +40,11 @@ public class ShopServiceImpl implements ShopService {
 			if (effectedNum <= 0) {
 				throw new ShopOperationException("店铺创建失败");
 			} else {
-				if (shopImgInput != null) { //图片等于空的话 没有判断
+				if (imageHolder.getImage() != null) { //图片等于空的话 没有判断
 					// 存储图片
 					try {
 						//修改shop图片地址
-						addshopImgInput(shop, shopImgInput,fileName);
+						addshopImgInput(shop, imageHolder);
 					} catch (Exception e) {
 						throw new ShopOperationException("addshopImgInput error:" + e.getMessage());
 					}
@@ -67,15 +68,15 @@ public class ShopServiceImpl implements ShopService {
 	}
 
 	@Override
-	public ShopExecution modifyShop(Shop shop, InputStream inputStream, String fileName) throws ShopOperationException {
+	public ShopExecution modifyShop(Shop shop, ImageHolder imageHolder) throws ShopOperationException {
 		try {
 			//判断是否需要处理图片
-			if (shop == null || shop.getShopId() == null && fileName != null && "".equals(fileName)) {
+			if (shop == null || shop.getShopId() == null && imageHolder.getImageName() != null && "".equals(imageHolder.getImageName())) {
 				return new ShopExecution(ShopStateEnum.NULL_SHOP);
 
 
 			} else {
-				if (inputStream != null) {
+				if (imageHolder.getImage() != null) {
 				//拿到shopId
 					Shop tempShop = shopDao.queryByShopId(shop.getShopId());
 
@@ -84,7 +85,7 @@ public class ShopServiceImpl implements ShopService {
 
 					}
 					//修改shop缩略图地址
-					addshopImgInput(shop, inputStream, fileName);
+					addshopImgInput(shop, imageHolder);
 				}
 				//更新shop
 				shop.setLastEditTime(new Date());
@@ -128,11 +129,11 @@ public class ShopServiceImpl implements ShopService {
 
 	}
 
-	private void addshopImgInput(Shop shop, InputStream shopImgInput,String fileName) {
+	private void addshopImgInput(Shop shop, ImageHolder imageHolder) {
 		// 获取shop 图片目录的相对值路径
 		String desc = PathUtil.getShopImagePath(shop.getShopId());
 		//返回缩略   图片 相对路径
-		String shopImgInputAddr = ImageUtil.generateThumbnail(shopImgInput, desc,fileName);
+		String shopImgInputAddr = ImageUtil.generateThumbnail(imageHolder,desc);
 		//设置图片地址
 		shop.setShopImg(shopImgInputAddr);
 

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lijian.o2o.dao.ProductImgDao">
+
+
+		
+		
+	<!-- useGeneratedKeys 拿到insert完成后拿到添加记录的id -->
+	<!-- 添加店铺 -->
+	
+	
+	
+	<insert id="batchInsertProductImg" useGeneratedKeys="true" keyColumn="product_img_id"
+		keyProperty="productImgId" parameterType="com.lijian.o2o.entity.Shop">
+
+		INSERT INTO
+		tb_product_img(img_addr,img_desc,priority,create_time,product_id)
+		values
+		<foreach collection="list" item="productImg" separator=",">
+			(
+			#{productImg.imgAddr},
+			#{productImg.imgDesc},
+			#{productImg.priority},
+			#{productImg.createTime},
+			#{productImg.productId}
+			)
+		</foreach>
+	</insert>
+	<delete id="deleteProductImgByProductId" parameterType="long">
+		delete from tb_product_img
+		where product_id=#{id};
+
+
+	</delete>
+	<insert id="addBatchProductImg" parameterType="list">
+		INSERT INTO
+		tb_product_img(img_addr,img_desc,priority,
+		create_time,product_id)
+		VALUES
+		<foreach collection="list" item="productImg" index="index"
+				 separator=",">
+			(
+			#{productImg.imgAddr},
+			#{productImg.imgDesc},
+			#{productImg.priority},
+			#{productImg.createTime},
+			#{productImg.productId}
+			)
+		</foreach>
+	</insert>
+
+
+	<!--
+            &lt;!&ndash; 如果shop实体类的shopCategory 不为空 并且 shop实体类的shopCategory的shopCategoryId属性 不为空 &ndash;&gt;
+                <if
+                    test="shopCondition.shopCategory!=null and
+            shopCondition.shopCategory.shopCategoryId!=null">
+                    and
+                    s.shop_category_id=#{shopCondition.shopCategory.shopCategoryId}
+                </if>
+                &lt;!&ndash; 如果shop实体类的shopCategory 不为空 并且 shop实体类的shopCategory的parent属性 不为空 并且shop &ndash;&gt;
+                <if
+                    test="shopCondition.shopCategory!=null and shopCondition.shopCategory.parent!=null
+                and shopCondition.shopCategory.parent.shopCategoryId!=null">
+                    and s.shop category id in (select shop_category_id from
+                    tb_shop_category
+                    where parent_id=#{shopCondition.shopCategory.parent.shopCategoryId})
+                </if>
+                <if test="shopCondition.shopName !=null">
+                and s.shop_name like '%${shopCondition.shopName}%'</if>
+                <if test="shopCondition.endableStatus != null">
+                and s.enable status = @{shopCondition.enableStatus}</if>
+                <if test="shopCondition.owner!= null nad shopCondition.owner.userId != null">
+                and s.owner_id =#{shopCondition.owner.userId}
+                </if>
+                and
+                s.area_id =a.area_id
+                and
+                s.shop_category_id =sc.shop_category_id
+            </where>
+            order by
+            s.priority desc
+            limit #{rowIndex},#{pageSize};
+
+        </select>-->
+</mapper>

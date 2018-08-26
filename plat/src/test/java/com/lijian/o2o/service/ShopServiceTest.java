@@ -8,6 +8,7 @@ import java.util.Date;
 
 import com.lijian.o2o.dao.ShopDao;
 import com.lijian.o2o.exception.ShopOperationException;
+import com.lijian.o2o.util.ImageHolder;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -50,7 +51,10 @@ public class ShopServiceTest extends BaseTest {
 		
 		File shopImg = new File("src/test/resources/小黄人_1.jpeg");
 		InputStream input = new FileInputStream(shopImg);
-		ShopExecution se = shopService.addShop(shop, input,shopImg.getName());
+		ImageHolder imageHolder = new ImageHolder();
+		imageHolder.setImage(input);
+		imageHolder.setImageName(shopImg.getName());
+		ShopExecution se = shopService.addShop(shop,imageHolder );
 //		Long shopId = shop.getShopId();
 //		System.out.println("shopId-->"+shopId);
 		Assert.assertEquals(ShopStateEnum.CHECK.getState(), se.getState());
@@ -63,7 +67,7 @@ public class ShopServiceTest extends BaseTest {
 		shop.setShopName("modifyShop");
 
 
-	ShopExecution shopExecution=	shopService.modifyShop(shop, new FileInputStream(new File("src/test/resources/Lighthouse.jpg")), "lighthouse.jpg");
+	ShopExecution shopExecution=	shopService.modifyShop(shop, new ImageHolder("lighthouse.jpg",new FileInputStream(new File("src/test/resources/Lighthouse.jpg"))));
 		System.out.println(shopExecution.getShop().getShopImg());
 
 

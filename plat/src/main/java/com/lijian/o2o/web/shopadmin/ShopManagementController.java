@@ -9,6 +9,9 @@ import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 
 import com.lijian.o2o.util.CodeUtil;
+import com.lijian.o2o.util.ImageHolder;
+import com.mysql.fabric.Response;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -126,7 +129,7 @@ public class ShopManagementController {
 
 			ShopExecution se;
 			try {
-				se = shopService.modifyShop(shop, shopImg.getInputStream(), shopImg.getOriginalFilename());
+				se = shopService.modifyShop(shop, new ImageHolder(shopImg.getOriginalFilename(),shopImg.getInputStream()));
 
 				// 检查返回值
 				if (se.getState() == ShopStateEnum.CHECK.getState()) {
@@ -248,10 +251,10 @@ public class ShopManagementController {
 			ShopExecution se;
 			try {
 				if (shopImg != null) {
-					se = shopService.modifyShop(shop, shopImg.getInputStream(), shopImg.getOriginalFilename());
+					se = shopService.modifyShop(shop, new ImageHolder(shopImg.getOriginalFilename(),shopImg.getInputStream()));
 				} else {
 
-					se = shopService.modifyShop(shop, null, null);
+					se = shopService.modifyShop(shop, new ImageHolder(null, null));
 				}
 				// 检查返回值
 				if (se.getState() == ShopStateEnum.SUCCESS.getState()) {
@@ -298,15 +301,15 @@ public class ShopManagementController {
 				Shop currentShop = (Shop) currentShopObj;
 				modelMap.put("redirect", false);
 				modelMap.put("shopId", currentShop.getShopId());
-
-
 			}
-
 		}
 		else {
+			
 			Shop currentShop = new Shop();
 			currentShop.setShopId(shopId);
+			//设置 sessionAttribute currentShop
 			request.getSession().setAttribute("currentShop", currentShop);
+			
 			modelMap.put("redirect", false);
 
 		}

@@ -2,26 +2,159 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="platform" />
+      <artifact name="plat:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6b99488-1fdd-413e-a14b-070ca328f73c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lijian/o2o/dao/ProductDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/ProductDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/lijian/o2o/dao/ProductDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/plat_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lijian/o2o/dao/ProductImgDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lijian/o2o/dto/ProductExecution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lijian/o2o/exception/ProductOperationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lijian/o2o/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lijian/o2o/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lijian/o2o/util/ImageHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/ProductImgDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/productmanagement.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/productoperation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/product/productmanagement.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/product/productoperation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/lijian/o2o/dao/ProductImgDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/lijian/o2o/service/ProductServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/Hydrangeas.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/Jellyfish.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/Koala.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/Penguins.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/platform.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/platform_archive.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalina.base_IS_UNDEFINED/logs/webapps/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/catalina.base_IS_UNDEFINED/logs/webapps/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ProductCategoryDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ProductCategoryDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/productcategory.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/productcategory.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalina.base_IS_UNDEFINED/logs/webapps/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/catalina.base_IS_UNDEFINED/logs/webapps/info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lijian/o2o/dao/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lijian/o2o/dao/ProductDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lijian/o2o/service/ProductCategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lijian/o2o/service/ProductCategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lijian/o2o/service/ShopService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lijian/o2o/service/ShopService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lijian/o2o/service/impl/ProductCategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lijian/o2o/service/impl/ProductCategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lijian/o2o/service/impl/ShopServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lijian/o2o/service/impl/ShopServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lijian/o2o/util/ImageUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lijian/o2o/util/ImageUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lijian/o2o/web/shopadmin/ProductAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lijian/o2o/web/shopadmin/ProductAdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lijian/o2o/web/shopadmin/ProductManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lijian/o2o/web/shopadmin/ProductManagementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lijian/o2o/web/shopadmin/ShopManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lijian/o2o/web/shopadmin/ShopManagementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ProductDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ProductDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/oparetion.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/oparetion.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shopmanagement.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shopmanagement.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/product/productcategory.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/product/productcategory.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lijian/o2o/dao/ProductCategoryDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lijian/o2o/dao/ProductCategoryDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lijian/o2o/exception/ProductCategoryExecution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lijian/o2o/exception/ProductCategoryExecution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/lijian/o2o/dao/ProductDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/lijian/o2o/dao/ProductDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/lijian/o2o/service/ShopServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/lijian/o2o/service/ShopServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lijian/o2o/dao/ProductDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lijian/o2o/dao/ProductDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/lijian/o2o/service/ProductCategoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lijian/o2o/service/ProductCategoryService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lijian/o2o/service/ShopService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lijian/o2o/service/ShopService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/lijian/o2o/service/impl/ProductCategoryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lijian/o2o/service/impl/ProductCategoryServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lijian/o2o/service/impl/ShopServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lijian/o2o/service/impl/ShopServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lijian/o2o/util/ImageUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lijian/o2o/util/ImageUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lijian/o2o/web/shopadmin/ProductAdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lijian/o2o/web/shopadmin/ProductAdminController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/lijian/o2o/web/shopadmin/ProductManagementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lijian/o2o/web/shopadmin/ProductManagementController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lijian/o2o/web/shopadmin/ShopManagementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lijian/o2o/web/shopadmin/ShopManagementController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/ProductDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/ProductDao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/org.o2o.lijian/plat/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/org.o2o.lijian/plat/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/lijian/o2o/dao/ProductCategoryDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/lijian/o2o/dao/ProductCategoryDaoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/category.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/com/liijian/o2o/enums/ProductCategoryStateEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/com/liijian/o2o/enums/ShopStateEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/com/lijian/o2o/dao/AreaDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/com/lijian/o2o/dao/ProductCategoryDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/com/lijian/o2o/dao/ShopCategoryDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/com/lijian/o2o/dao/ShopDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/com/lijian/o2o/dto/ProductCategoryExecution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/com/lijian/o2o/dto/Result.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/com/lijian/o2o/dto/ShopExecution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/com/lijian/o2o/entity/Area.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/com/lijian/o2o/entity/Award.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/com/lijian/o2o/entity/HeadLine.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/com/lijian/o2o/entity/LocalAuth.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/com/lijian/o2o/entity/PersonInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/com/lijian/o2o/entity/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/com/lijian/o2o/entity/ProductCategory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/com/lijian/o2o/entity/ProductImg.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/com/lijian/o2o/entity/ProductSellDaily.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/com/lijian/o2o/entity/Shop.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/com/lijian/o2o/entity/ShopAuthMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/com/lijian/o2o/entity/ShopCategory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/com/lijian/o2o/entity/UserAwardMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/com/lijian/o2o/entity/UserProductMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/com/lijian/o2o/entity/UserShopMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/com/lijian/o2o/entity/WechatAuth.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/com/lijian/o2o/exception/ProductCategoryExecution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/com/lijian/o2o/exception/ProductCategoryOperationException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/com/lijian/o2o/exception/ShopOperationException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/com/lijian/o2o/service/AreaService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/com/lijian/o2o/service/ProductCategoryService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/com/lijian/o2o/service/ShopCategoryService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/com/lijian/o2o/service/ShopService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/com/lijian/o2o/service/impl/AreaServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/com/lijian/o2o/service/impl/ProductCategoryServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/com/lijian/o2o/service/impl/ShopCategoryServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/com/lijian/o2o/service/impl/ShopServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/com/lijian/o2o/util/CodeUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/com/lijian/o2o/util/HttpServletRequestUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/com/lijian/o2o/util/ImageUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/com/lijian/o2o/util/PageCalculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/com/lijian/o2o/util/PathUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/com/lijian/o2o/web/shopadmin/ProductAdminController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/com/lijian/o2o/web/shopadmin/ProductManagementController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/com/lijian/o2o/web/shopadmin/ShopAdminController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/com/lijian/o2o/web/shopadmin/ShopManagementController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/com/lijian/o2o/web/superadmin/AreaController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/jdbc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/mapper/AreaDao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/mapper/ProductCategoryDao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/mapper/ShopCategoryDao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/mapper/ShopDao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/spring/spring-dao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/spring/spring-service.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/classes/spring/spring-web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/html/shop/oparetion.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/html/shop/productcategory.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/html/shop/shoplist.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/html/shop/shopmanagement.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/lib/c3p0-0.9.1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/lib/commons-collections-3.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/lib/commons-fileupload-1.3.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/lib/commons-io-2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/lib/commons-logging-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/lib/commons-pool2-2.4.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/lib/filters-2.0.235-1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/lib/gson-2.8.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/lib/jackson-annotations-2.8.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/lib/jackson-core-2.8.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/lib/jackson-databind-2.8.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/lib/jedis-2.9.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/lib/kaptcha-2.3.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/lib/logback-classic-1.2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/lib/logback-core-1.2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/lib/mybatis-3.4.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/lib/mybatis-spring-1.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/lib/mysql-connector-java-5.1.37.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/lib/slf4j-api-1.7.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/lib/spring-aop-4.3.7.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/lib/spring-beans-4.3.7.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/lib/spring-context-4.3.7.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/lib/spring-core-4.3.7.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/lib/spring-expression-4.3.7.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/lib/spring-jdbc-4.3.7.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/lib/spring-tx-4.3.7.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/lib/spring-web-4.3.7.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/lib/spring-webmvc-4.3.7.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/lib/thumbnailator-0.4.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/resources/js/common/common.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/resources/js/product/productcategory.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/resources/js/shop/operation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/resources/js/shop/shoplist.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/plat/resources/js/shop/shopmanagement.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/lijian/o2o/dao/ProductDaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/lijian/o2o/dao/ProductDaoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/lijian/o2o/service/ShopServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/lijian/o2o/service/ShopServiceTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,6 +163,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/plat$ShopDaoTest_updateShopTest.ic" NAME="ShopDaoTest.updateShopTest Coverage Results" MODIFIED="1534498451053" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -40,72 +176,12 @@
     <favorites_list name="plat" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="productcategory.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/product/productcategory.js">
+    <leaf>
+      <file leaf-file-name="productcategory.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/productcategory.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="852">
-              <caret line="123" column="48" lean-forward="true" selection-start-line="123" selection-start-column="48" selection-end-line="123" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/dao/ProductDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="26" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductDao.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ProductDao.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="68" lean-forward="true" selection-start-line="6" selection-start-column="68" selection-end-line="6" selection-end-column="68" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductDaoTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/lijian/o2o/dao/ProductDaoTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="16" selection-start-line="16" selection-end-line="16" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductImg.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/entity/ProductImg.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShopDao.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ShopDao.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Product.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/entity/Product.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-276">
-              <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+            <state relative-caret-position="780">
+              <caret line="48" column="4" selection-start-line="48" selection-start-column="4" selection-end-line="49" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -113,29 +189,35 @@
       <file leaf-file-name="ProductManagementController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/web/shopadmin/ProductManagementController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-248">
-              <caret line="134" selection-start-line="134" selection-end-line="134" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="178">
+              <caret line="152" column="80" selection-start-line="152" selection-start-column="80" selection-end-line="152" selection-end-column="80" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="productcategory.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/productcategory.html">
+      <file leaf-file-name="ProductCategoryService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/service/ProductCategoryService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="30" column="45" lean-forward="true" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+            <state relative-caret-position="346">
+              <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="productcategorymanagement.js" pinned="false" current-in-tab="false">
-        <entry file="file://E:/eclipse-o2o/mvco2o/src/main/webapp/resources/js/shop/productcategorymanagement.js">
+      <file leaf-file-name="ProductCategoryServiceImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/service/impl/ProductCategoryServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="24" column="93" selection-start-line="24" selection-start-column="93" selection-end-line="24" selection-end-column="100" />
+            <state relative-caret-position="148">
+              <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="productcategory.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/product/productcategory.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="896">
+              <caret line="130" column="28" lean-forward="true" selection-start-line="130" selection-start-column="28" selection-end-line="130" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -146,6 +228,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="mybatis-generator-config" />
         <option value="Class" />
       </list>
     </option>
@@ -161,25 +244,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/lijian/o2o/util/CodeUtil.java" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/spring-web.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/oparetion.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lijian/o2o/util/ImageUtil.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/shop/operation.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/lijian/o2o/dao/ShopDao.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/lijian/o2o/dao/ShopDaoTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lijian/o2o/service/ShopService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lijian/o2o/util/PageCalculator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lijian/o2o/service/impl/ShopServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/lijian/o2o/service/ShopServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/shop/shopmanagement.js" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/ShopDao.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lijian/o2o/web/shopadmin/ShopManagementController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/shop/shoplist.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/lijian/o2o/dao/ShopCategoryDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lijian/o2o/web/shopadmin/ProductAdminController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/shop/productcategory.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shopmanagement.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/liijian/o2o/enums/ProductCategoryStateEnum.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lijian/o2o/dto/ProductCategoryExecution.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lijian/o2o/exception/ProductCategoryOperationException.java" />
@@ -187,17 +261,45 @@
         <option value="E:/eclipse-o2o/mvco2o/src/main/webapp/resources/js/shop/productcategorymanagement.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/lijian/o2o/dao/ProductCategoryDao.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/lijian/o2o/dao/ProductCategoryDaoTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lijian/o2o/service/ProductCategoryService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lijian/o2o/service/impl/ProductCategoryServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/productcategory.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lijian/o2o/web/shopadmin/ProductManagementController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/product/productcategory.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lijian/o2o/dao/ProductDao.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/ProductCategoryDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lijian/o2o/dto/ImageHolder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lijian/o2o/service/ShopService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lijian/o2o/service/impl/ShopServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lijian/o2o/util/ImageHolder.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/lijian/o2o/service/ShopServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lijian/o2o/web/shopadmin/ShopManagementController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lijian/o2o/exception/ProductOperationException.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/lijian/o2o/dao/ProductImgDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lijian/o2o/dao/ProductImgDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lijian/o2o/dao/ProductDao.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/ProductImgDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lijian/o2o/dto/ProductExecution.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lijian/o2o/util/ImageUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lijian/o2o/service/ProductCategoryService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shopmanagement.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/oparetion.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/product/productcategory.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/product.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/productoperation.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/product/productoperation.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lijian/o2o/web/shopadmin/ShopAdminController.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/lijian/o2o/service/ProductServiceTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/lijian/o2o/dao/ProductDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lijian/o2o/service/ProductService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lijian/o2o/service/impl/ProductServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lijian/o2o/web/shopadmin/ProductAdminController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/productmanagement.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/js/product/productmanagement.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lijian/o2o/web/shopadmin/ProductManagementController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/ProductDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lijian/o2o/service/impl/ProductCategoryServiceImpl.java" />
       </list>
     </option>
+  </component>
+  <component name="JRebelWorkspace">
+    <option name="jrebelEnabledAutocompile" value="true" />
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -226,11 +328,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="35" />
-    <option name="y" value="245" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="47" />
+    <option name="y" value="36" />
     <option name="width" value="1248" />
-    <option name="height" value="318" />
+    <option name="height" value="356" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -238,6 +340,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -262,6 +366,30 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="plat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="plat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="plat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="plat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="plat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="plat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="plat" type="b2602c69:ProjectViewProjectNode" />
@@ -309,6 +437,16 @@
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="plat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="plat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="plat" type="b2602c69:ProjectViewProjectNode" />
@@ -368,13 +506,19 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="plat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="plat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -386,23 +530,26 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.33076182" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="com.zeroturnaround.javarebel.idea.plugin.settings.JRebelSettingsComponent" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\lijian\git\o2o\plat\src\main\webapp\resources\js\product" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.lijian.o2o.dao" />
+      <recent name="com.lijian.o2o.exception" />
+      <recent name="com.lijian.o2o.dto" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\lijian\git\o2o\plat\src\main\resources\mapper" />
+      <recent name="C:\Users\lijian\git\o2o\plat\src\main\webapp\resources\js\product" />
       <recent name="C:\Users\lijian\git\o2o\plat\src\main\webapp\WEB-INF\html\shop" />
       <recent name="C:\Users\lijian\git\o2o\plat\src\test\resources" />
+      <recent name="C:\Users\lijian\git\o2o\plat\src\main\resources\mapper" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.lijian.o2o.service.impl" />
       <recent name="com.lijian.o2o.service" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.lijian.o2o.exception" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lijian\git\o2o\plat\src\main\webapp\resources\js\product" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -417,80 +564,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ProductDaoTest.testAddProduct">
+  <component name="RunManager" selected="JUnit.ProductDaoTest.testCount">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="ProductCategoryDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="plat" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lijian.o2o.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.lijian.o2o.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.lijian.o2o.dao.ProductCategoryDaoTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="ProductCategoryDaoTest.TestDeleteProductCategory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="plat" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lijian.o2o.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.lijian.o2o.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.lijian.o2o.dao.ProductCategoryDaoTest" />
-      <option name="METHOD_NAME" value="TestDeleteProductCategory" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="ProductCategoryDaoTest.batchInsertProductCategoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="plat" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lijian.o2o.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.lijian.o2o.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.lijian.o2o.dao.ProductCategoryDaoTest" />
-      <option name="METHOD_NAME" value="batchInsertProductCategoryTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="ProductDaoTest.testAddBatchProductImg" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductDaoTest.testCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="plat" />
       <extension name="coverage">
         <pattern>
@@ -502,7 +580,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.lijian.o2o.dao" />
       <option name="MAIN_CLASS_NAME" value="com.lijian.o2o.dao.ProductDaoTest" />
-      <option name="METHOD_NAME" value="testAddBatchProductImg" />
+      <option name="METHOD_NAME" value="testCount" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -513,7 +591,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="ProductDaoTest.testAddProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductDaoTest.testGetProductById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="plat" />
       <extension name="coverage">
         <pattern>
@@ -525,7 +603,76 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.lijian.o2o.dao" />
       <option name="MAIN_CLASS_NAME" value="com.lijian.o2o.dao.ProductDaoTest" />
+      <option name="METHOD_NAME" value="testGetProductById" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="ProductDaoTest.testQueryProductList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="plat" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lijian.o2o.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.lijian.o2o.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.lijian.o2o.dao.ProductDaoTest" />
+      <option name="METHOD_NAME" value="testQueryProductList" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="ProductServiceTest.testAddProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="plat" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lijian.o2o.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.lijian.o2o.service" />
+      <option name="MAIN_CLASS_NAME" value="com.lijian.o2o.service.ProductServiceTest" />
       <option name="METHOD_NAME" value="testAddProduct" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="ProductServiceTest.testModifyProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="plat" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lijian.o2o.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.lijian.o2o.service" />
+      <option name="MAIN_CLASS_NAME" value="com.lijian.o2o.service.ProductServiceTest" />
+      <option name="METHOD_NAME" value="testModifyProduct" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -575,12 +722,12 @@
       <listeners />
     </configuration>
     <configuration name="tomcat7" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.88" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
-      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+      <option name="BROWSER_ID" value="53e2f627-b1a7-4dfa-bfa7-5b83cc034776" />
+      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="plat:war">
+        <artifact name="plat:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/" />
+            <option name="CONTEXT_PATH" value="/platform" />
           </settings>
         </artifact>
       </deployment>
@@ -595,6 +742,9 @@
       <extension name="coverage" sample_coverage="false" />
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="57820" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="JRebel Debug">
+        <option name="DEBUG_PORT" value="58384" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -626,6 +776,36 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JRebel Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JRebel Executor">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
@@ -643,25 +823,25 @@
       </ConfigurationWrapper>
       <method>
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="platform" />
+          <artifact name="plat:war exploded" />
         </option>
       </method>
     </configuration>
     <list>
       <item itemvalue="Tomcat Server.tomcat7" />
-      <item itemvalue="JUnit.ProductCategoryDaoTest.batchInsertProductCategoryTest" />
-      <item itemvalue="JUnit.ProductCategoryDaoTest.TestDeleteProductCategory" />
-      <item itemvalue="JUnit.ProductCategoryDaoTest" />
-      <item itemvalue="JUnit.ProductDaoTest.testAddBatchProductImg" />
-      <item itemvalue="JUnit.ProductDaoTest.testAddProduct" />
+      <item itemvalue="JUnit.ProductServiceTest.testAddProduct" />
+      <item itemvalue="JUnit.ProductDaoTest.testGetProductById" />
+      <item itemvalue="JUnit.ProductServiceTest.testModifyProduct" />
+      <item itemvalue="JUnit.ProductDaoTest.testQueryProductList" />
+      <item itemvalue="JUnit.ProductDaoTest.testCount" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ProductDaoTest.testAddProduct" />
-        <item itemvalue="JUnit.ProductDaoTest.testAddBatchProductImg" />
-        <item itemvalue="JUnit.ProductCategoryDaoTest" />
-        <item itemvalue="JUnit.ProductCategoryDaoTest.TestDeleteProductCategory" />
-        <item itemvalue="JUnit.ProductCategoryDaoTest.batchInsertProductCategoryTest" />
+        <item itemvalue="JUnit.ProductDaoTest.testCount" />
+        <item itemvalue="JUnit.ProductDaoTest.testQueryProductList" />
+        <item itemvalue="JUnit.ProductServiceTest.testAddProduct" />
+        <item itemvalue="JUnit.ProductServiceTest.testModifyProduct" />
+        <item itemvalue="JUnit.ProductDaoTest.testGetProductById" />
       </list>
     </recent_temporary>
   </component>
@@ -682,44 +862,53 @@
       <workItem from="1534729222806" duration="25548000" />
       <workItem from="1534775266405" duration="3435000" />
       <workItem from="1534779445583" duration="4402000" />
-      <workItem from="1534813472065" duration="6984000" />
+      <workItem from="1534813472065" duration="7223000" />
+      <workItem from="1534928876834" duration="247000" />
+      <workItem from="1534948607676" duration="591000" />
+      <workItem from="1534988569267" duration="12702000" />
+      <workItem from="1535028061929" duration="400000" />
+      <workItem from="1535028529422" duration="2780000" />
+      <workItem from="1535070872962" duration="892000" />
+      <workItem from="1535121146631" duration="2486000" />
+      <workItem from="1535245958427" duration="773000" />
+      <workItem from="1535247153003" duration="31767000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ProductCategoryDaoTest_TestDeleteProductCategory - 2018.08.20 at 23h 56m 57s.xml">
-      <configuration name="ProductCategoryDaoTest.TestDeleteProductCategory" configurationId="JUnit" />
+    <history-entry file="ProductServiceTest_testModifyProduct - 2018.08.26 at 15h 40m 26s.xml">
+      <configuration name="ProductServiceTest.testModifyProduct" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductCategoryDaoTest_TestDeleteProductCategory - 2018.08.20 at 23h 58m 23s.xml">
-      <configuration name="ProductCategoryDaoTest.TestDeleteProductCategory" configurationId="JUnit" />
+    <history-entry file="ProductServiceTest_testModifyProduct - 2018.08.26 at 15h 41m 09s.xml">
+      <configuration name="ProductServiceTest.testModifyProduct" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductCategoryDaoTest - 2018.08.21 at 00h 01m 01s.xml">
-      <configuration name="ProductCategoryDaoTest" configurationId="JUnit" />
+    <history-entry file="ProductServiceTest_testModifyProduct - 2018.08.26 at 15h 49m 34s.xml">
+      <configuration name="ProductServiceTest.testModifyProduct" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductCategoryDaoTest - 2018.08.21 at 00h 02m 40s.xml">
-      <configuration name="ProductCategoryDaoTest" configurationId="JUnit" />
+    <history-entry file="ProductServiceTest_testModifyProduct - 2018.08.26 at 15h 51m 26s.xml">
+      <configuration name="ProductServiceTest.testModifyProduct" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductCategoryDaoTest - 2018.08.21 at 00h 11m 39s.xml">
-      <configuration name="ProductCategoryDaoTest" configurationId="JUnit" />
+    <history-entry file="ProductServiceTest_testAddProduct - 2018.08.26 at 22h 24m 38s.xml">
+      <configuration name="ProductServiceTest.testAddProduct" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductCategoryDaoTest - 2018.08.21 at 00h 12m 22s.xml">
-      <configuration name="ProductCategoryDaoTest" configurationId="JUnit" />
+    <history-entry file="ProductServiceTest_testAddProduct - 2018.08.26 at 22h 32m 22s.xml">
+      <configuration name="ProductServiceTest.testAddProduct" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductDaoTest_testAddBatchProductImg - 2018.08.21 at 10h 30m 33s.xml">
-      <configuration name="ProductDaoTest.testAddBatchProductImg" configurationId="JUnit" />
+    <history-entry file="ProductServiceTest_testAddProduct - 2018.08.26 at 22h 40m 21s.xml">
+      <configuration name="ProductServiceTest.testAddProduct" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductDaoTest_testAddProduct - 2018.08.21 at 10h 40m 13s.xml">
-      <configuration name="ProductDaoTest.testAddProduct" configurationId="JUnit" />
+    <history-entry file="ProductDaoTest_testQueryProductList - 2018.08.26 at 22h 57m 11s.xml">
+      <configuration name="ProductDaoTest.testQueryProductList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductDaoTest_testAddProduct - 2018.08.21 at 10h 40m 52s.xml">
-      <configuration name="ProductDaoTest.testAddProduct" configurationId="JUnit" />
+    <history-entry file="ProductDaoTest_testQueryProductList - 2018.08.26 at 23h 00m 25s.xml">
+      <configuration name="ProductDaoTest.testQueryProductList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductDaoTest_testAddProduct - 2018.08.21 at 10h 43m 03s.xml">
-      <configuration name="ProductDaoTest.testAddProduct" configurationId="JUnit" />
+    <history-entry file="ProductDaoTest_testCount - 2018.08.26 at 23h 03m 12s.xml">
+      <configuration name="ProductDaoTest.testCount" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73533000" />
+    <option name="totallyTimeSpent" value="126410000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -735,42 +924,43 @@
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.3293718" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32933104" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.3282313" />
-      <window_info anchor="bottom" id="JRebel Console" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="JRebel Console" order="8" sideWeight="0.50075644" side_tool="true" weight="0.39898133" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.32980332" />
-      <window_info anchor="bottom" id="JRebel Executor" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="JRebel Executor" order="8" />
       <window_info anchor="right" id="Mongo Explorer" order="3" weight="0.32937685" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.3260212" />
       <window_info anchor="bottom" id="Statistic" order="7" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info id="Structure" order="1" sideWeight="0.50254667" side_tool="true" weight="0.36308622" />
+      <window_info id="Structure" order="1" sideWeight="0.50764006" side_tool="true" weight="0.26936027" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" id="JRebel Setup Guide" order="4" weight="0.25567323" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49924356" weight="0.59083194" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32993197" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.3293718" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.6672326" />
       <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.426146" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.3293718" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4974533" weight="0.36762482" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49235994" weight="0.2700454" />
+      <window_info anchor="bottom" id="Problems" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="JRebel" order="2" side_tool="true" />
       <window_info id="Learn" order="2" weight="0.32980332" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" sideWeight="0.50254667" side_tool="true" weight="0.36308622" />
+      <window_info id="Favorites" order="2" sideWeight="0.5042445" side_tool="true" weight="0.36762482" />
       <window_info anchor="right" id="Coverage" order="3" side_tool="true" weight="0.32980332" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="JRebel Setup Guide" order="4" weight="0.25567323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.3260212" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -784,384 +974,404 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/service/impl/ProductServiceImpl.java</url>
+          <line>89</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/service/impl/ProductServiceImpl.java</url>
+          <line>149</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/util/ImageUtil.java</url>
+          <line>107</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="14" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="uml://JavaScript-modules-diagram/C:/Users/lijian/git/o2o/plat/src/main/java/com/lijian/o2o/dao;C:/Users/lijian/git/o2o/plat/src/main/java/com/lijian/o2o/entity;C:/Users/lijian/git/o2o/plat/src/main/java/com/lijian/o2o/service;C:/Users/lijian/git/o2o/plat/src/main/java/com/lijian/o2o/service/impl;">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JavaScript-modules-diagram</ID>
-          <OriginalElement>$PROJECT_DIR$/src/main/java/com/lijian/o2o/dao;C:/Users/lijian/git/o2o/plat/src/main/java/com/lijian/o2o/entity;C:/Users/lijian/git/o2o/plat/src/main/java/com/lijian/o2o/service;C:/Users/lijian/git/o2o/plat/src/main/java/com/lijian/o2o/service/impl;</OriginalElement>
-          <nodes />
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="240.0" y="240.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>All</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>Details</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/util/ImageUtil.java">
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-tx/4.3.7.RELEASE/spring-tx-4.3.7.RELEASE.jar!/org/springframework/transaction/interceptor/TransactionAspectSupport.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1672">
-          <caret line="90" selection-start-line="90" selection-end-line="90" />
+        <state relative-caret-position="196">
+          <caret line="153" selection-start-line="153" selection-end-line="153" />
         </state>
       </provider>
     </entry>
-    <entry file="file://E:/eclipse-o2o/mvco2o/src/main/webapp/resources/js/shop/shopoperation.js">
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-aop/4.3.7.RELEASE/spring-aop-4.3.7.RELEASE.jar!/org/springframework/aop/framework/JdkDynamicAopProxy.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="82" column="46" selection-start-line="82" selection-start-column="46" selection-end-line="82" selection-end-column="46" />
+        <state relative-caret-position="113">
+          <caret line="143" selection-start-line="143" selection-end-line="143" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/util/PageCalculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="57" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/service/AreaService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/service/impl/ShopServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2068">
-          <caret line="112" column="36" selection-start-line="112" selection-start-column="25" selection-end-line="112" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/service/ShopService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="15865" column="12" selection-start-line="15865" selection-start-column="12" selection-end-line="15865" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/shop/operation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/lijian/o2o/service/ShopServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="21" column="30" lean-forward="true" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/entity/PersonInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-44">
-          <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/entity/Shop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/lijian/o2o/dao/ShopDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/eclipse-o2o/mvco2o/src/main/webapp/resources/js/shop/shoplist.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="45" column="33" lean-forward="true" selection-start-line="44" selection-start-column="12" selection-end-line="45" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/dao/ShopDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="24" column="10" lean-forward="true" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/dao/ShopCategoryDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="10" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/lijian/o2o/dao/AreaDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/lijian/o2o/dao/ShopCategoryDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/service/ShopCategoryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/service/impl/AreaServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/web/shopadmin/ShopManagementController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="31" selection-start-line="31" selection-end-line="33" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/web/shopadmin/ShopAdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/shop/shoplist.js">
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-test/4.3.7.RELEASE/spring-test-4.3.7.RELEASE.jar!/org/springframework/test/context/junit4/statements/RunAfterTestMethodCallbacks.class">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret lean-forward="true" />
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shoplist.html">
+    <entry file="jar://$USER_HOME$/.m2/repository/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="60" column="4" selection-start-line="60" selection-start-column="4" selection-end-line="61" selection-end-column="33" />
+        <state relative-caret-position="244">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/web/shopadmin/ProductAdminController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/util/ImageHolder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="11" lean-forward="true" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        <state relative-caret-position="264">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/entity/ProductCategory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/util/CodeUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="38" />
+        <state relative-caret-position="44">
+          <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/dto/ProductCategoryExecution.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/liijian/o2o/enums/ProductStateEnum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/dto/ShopExecution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="404">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/dto/Result.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
+        <state relative-caret-position="52">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/shop/shopmanagement.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/dto/ProductCategoryExecution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-44">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/util/PageCalculator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/exception/ProductCategoryExecution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/exception/ProductCategoryOperationException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="1" selection-start-line="6" selection-start-column="5" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/liijian/o2o/enums/ProductCategoryStateEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="30" selection-start-column="30" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/dao/ProductCategoryDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/lijian/o2o/dao/ProductCategoryDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/service/impl/ProductCategoryServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1012">
-          <caret line="61" column="39" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/eclipse-o2o/mvco2o/src/main/webapp/resources/js/shop/productmanagement.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="733">
-          <caret line="96" column="50" lean-forward="true" selection-start-line="96" selection-start-column="50" selection-end-line="96" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/service/ProductCategoryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="17" column="128" selection-start-line="17" selection-start-column="128" selection-end-line="17" selection-end-column="128" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/eclipse-o2o/mvco2o/src/main/webapp/resources/js/shop/productcategorymanagement.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/dto/ShopExecution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="24" column="93" selection-start-line="24" selection-start-column="93" selection-end-line="24" selection-end-column="100" />
+          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shopmanagement.html">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="31" column="22" lean-forward="true" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+        <state relative-caret-position="330">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/productcategory.html">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/lijian/o2o/dao/ShopDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="30" column="45" lean-forward="true" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+        <state relative-caret-position="426">
+          <caret line="32" column="8" lean-forward="true" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/web/shopadmin/ProductManagementController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/entity/Shop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-248">
-          <caret line="134" selection-start-line="134" selection-end-line="134" />
+        <state relative-caret-position="230">
+          <caret line="36" column="28" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/lijian/o2o/dao/ProductImgDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="30" column="49" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/product/productcategory.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="852">
-          <caret line="123" column="48" lean-forward="true" selection-start-line="123" selection-start-column="48" selection-end-line="123" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/entity/ProductImg.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="264">
+          <caret line="12" column="29" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ProductImgDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/util/ImageUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="119" selection-start-line="119" selection-end-line="119" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ProductCategoryDao.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="778">
-          <caret line="54" column="9" lean-forward="true" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
+        <state relative-caret-position="814">
+          <caret line="37" column="21" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/dao/ProductDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/dao/ProductCategoryDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="26" />
+        <state relative-caret-position="198">
+          <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/dao/ProductImgDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/eclipse-o2o/mvco2o/src/main/webapp/resources/js/shop/shopoperation.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://E:/eclipse-o2o/mvco2o/src/main/webapp/resources/js/shop/productoperation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/common/common.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/oparetion.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-14">
+          <caret line="145" column="16" lean-forward="true" selection-start-line="145" selection-start-column="16" selection-end-line="145" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/shop/operation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/shop/shopmanagement.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/product.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="107" column="63" lean-forward="true" selection-start-line="107" selection-start-column="63" selection-end-line="107" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/product/productoperation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-504">
+          <caret line="115" column="33" selection-start-line="115" selection-start-column="33" selection-end-line="115" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/web/shopadmin/ShopAdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/entity/ProductCategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="12" column="34" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/lijian/o2o/service/ProductServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1232">
+          <caret line="56" column="67" selection-start-line="56" selection-start-column="67" selection-end-line="56" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/entity/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-276">
-          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ProductDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="68" lean-forward="true" selection-start-line="6" selection-start-column="68" selection-end-line="6" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ShopDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/lijian/o2o/dao/ProductDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" selection-start-line="16" selection-end-line="16" selection-end-column="45" />
+        <state relative-caret-position="1460">
+          <caret line="103" selection-start-line="103" selection-end-line="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/entity/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#2711#2712#0" expanded="true" />
+            <element signature="e#2729#2730#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/service/ProductService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/dto/ProductExecution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="751">
+          <caret line="44" column="83" selection-start-line="44" selection-start-column="57" selection-end-line="44" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/service/impl/ProductServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="145" column="5" lean-forward="true" selection-start-line="145" selection-start-column="5" selection-end-line="145" selection-end-column="5" />
+          <folding>
+            <element signature="e#4565#4566#0" expanded="true" />
+            <element signature="e#4626#4627#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/web/shopadmin/ShopManagementController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2216">
+          <caret line="300" column="57" lean-forward="true" selection-start-line="300" selection-start-column="57" selection-end-line="300" selection-end-column="57" />
+          <folding>
+            <element signature="e#1788#1804#0" expanded="true" />
+            <element signature="e#1861#1875#0" expanded="true" />
+            <element signature="e#1916#1922#0" expanded="true" />
+            <element signature="e#2619#2635#0" expanded="true" />
+            <element signature="e#6062#6078#0" expanded="true" />
+            <element signature="e#8274#8290#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shoplist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="61" column="33" lean-forward="true" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/productoperation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="187" column="4" lean-forward="true" selection-start-line="187" selection-start-column="4" selection-end-line="188" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/shopmanagement.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="53" column="33" lean-forward="true" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/productmanagement.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="65" column="7" lean-forward="true" selection-start-line="65" selection-start-column="7" selection-end-line="65" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/product/productmanagement.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="98" column="39" lean-forward="true" selection-start-line="98" selection-start-column="39" selection-end-line="98" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/web/shopadmin/ProductAdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="39" lean-forward="true" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+          <folding>
+            <element signature="e#612#613#0" expanded="true" />
+            <element signature="e#658#659#0" expanded="true" />
+            <element signature="e#776#777#0" expanded="true" />
+            <element signature="e#822#823#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ProductDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="116" column="35" lean-forward="true" selection-start-line="116" selection-start-column="35" selection-end-line="116" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/dao/ProductDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="58" column="22" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/product/productcategory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="896">
+          <caret line="130" column="28" lean-forward="true" selection-start-line="130" selection-start-column="28" selection-end-line="130" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/shop/productcategory.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="48" column="4" selection-start-line="48" selection-start-column="4" selection-end-line="49" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/web/shopadmin/ProductManagementController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="152" column="80" selection-start-line="152" selection-start-column="80" selection-end-line="152" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/service/ProductCategoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lijian/o2o/service/impl/ProductCategoryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
         </state>
       </provider>
     </entry>
@@ -1171,7 +1381,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>platform archive</last-edited>
+          <last-edited>plat:war exploded</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1184,7 +1394,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Detection</last-edited>
+          <last-edited>Web (plat)|Web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1249,6 +1459,17 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.18134263" />
               </list>
             </option>
           </splitter-proportions>

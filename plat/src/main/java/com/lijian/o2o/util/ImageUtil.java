@@ -43,13 +43,13 @@ public class ImageUtil {
 	}
 	/**
 	 * 处理缩略图 返回图片相对路径
-	 * @param thumbnail
 	 * @param targetAddr
+	 *
 	 * @return
 	 */
-	public  static String generateThumbnail(InputStream thumbnail,String targetAddr,String fileName){
+	public  static String generateThumbnail(ImageHolder imageHolder,String targetAddr){
 		String realFileName=getRandomFileName();
-		String extension = getFileExtension(fileName);
+		String extension = getFileExtension(imageHolder.getImageName());
 		makeDirPath(targetAddr);
 //		logger.debug(thumbnail.read(new byte[1024])+"");
 		//由于相当路径 抛出 Can't read input file! Can't read input file!
@@ -65,7 +65,7 @@ public class ImageUtil {
 		try{
 			/*Thumbnails.of(thumbnail).size(1000,1000)
 			.toFile(dest);*/
-			Thumbnails.of(thumbnail).size(1000, 1000)
+			Thumbnails.of(imageHolder.getImage()).size(200, 200)
 					.watermark(Positions.BOTTOM_LEFT, ImageIO.read(waterFile), 0.25f)
 					.outputQuality(0.8f).toFile(dest);
 		
@@ -102,6 +102,7 @@ public class ImageUtil {
 		return newTimeStr + rannum;
 	}
 
+	//删除图片物理地址
 	public static void deleteFileOrPath(String storePath) {
 
 		File fileOrPath = new File(PathUtil.getImgBasePath() + storePath);
@@ -125,4 +126,33 @@ public class ImageUtil {
 				.watermark(Positions.BOTTOM_LEFT, ImageIO.read(new File("src/test/resources/watermark.jpg")), 0.25f)
 				.outputQuality(0.8f).toFile("src/test/resources/xiaohangrennew.jpg");
 	}
+
+    public static String generateNormalImg(ImageHolder imageHolder, String targetAddr) {
+		String realFileName=getRandomFileName();
+		String extension = getFileExtension(imageHolder.getImageName());
+		makeDirPath(targetAddr);
+//		logger.debug(thumbnail.read(new byte[1024])+"");
+		//由于相当路径 抛出 Can't read input file! Can't read input file!
+		//该用绝对路径 可以
+
+		File waterFile = new File ("D:/watermark.jpg");
+
+		String relativeAddr = targetAddr+realFileName+extension;
+		logger.debug("current relativeAddr is :"+ relativeAddr);
+		File dest = new File(PathUtil.getImgBasePath()+ relativeAddr);
+		logger.debug("current complete addr is:"+PathUtil.getImgBasePath()+relativeAddr);
+		logger.debug("basePath is:"+basePath);
+		try{
+			/*Thumbnails.of(thumbnail).size(1000,1000)
+			.toFile(dest);*/
+			Thumbnails.of(imageHolder.getImage()).size(1000, 1000)
+					.watermark(Positions.BOTTOM_LEFT, ImageIO.read(waterFile), 0.25f)
+					.outputQuality(0.9f).toFile(dest);
+
+		}catch(IOException e){
+			e.printStackTrace();
+			logger.error(e.toString());
+		}
+		return relativeAddr;
+    }
 }
