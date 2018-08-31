@@ -1,0 +1,25 @@
+.shop-classify-img-warp img{
+    width: 300px;
+    height: 250px;
+    margin: 10px;
+    border: 1px solid #cccccc;
+    padding: 5px;
+
+
+}
+.word .shop-title{
+    position: relative;
+    left: 5px;
+}
+.banner-img{
+    width: 100%;
+    height: 400px;
+}
+.word .shop-desc{
+ font-size: 16px;
+    color: burlywood;
+    font-weight: revert;
+    letter-spacing: 3px;
+    position: relative;
+    left: 20px;
+}

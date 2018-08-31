@@ -94,6 +94,16 @@ public class ShopDaoTest extends BaseTest {
 	public void queryShopListAndCountTest(){
 		Shop shop = new Shop();
 
+
+		ShopCategory shopCategoryParent= new ShopCategory();
+		shopCategoryParent.setShopCategoryId(11L);
+
+		ShopCategory shopCategoryChild = new ShopCategory();
+		shopCategoryChild.setParent(shopCategoryParent);
+
+		shop.setShopCategory(shopCategoryChild);
+
+
 		PersonInfo user = new PersonInfo();
 		user.setUserId(1L);
 

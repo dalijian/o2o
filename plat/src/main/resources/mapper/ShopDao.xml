@@ -126,7 +126,7 @@
 		
 	<!-- 	分页查询 -->
 		
-	<select id="queryShopList" resultMap="shopMap">
+	<select id="queryShopList" resultMap="shopMap" >
 		select
 		s.shop_id,
 		s.shop_name,
@@ -155,6 +155,15 @@
 				and s.area_id = #{shopCondition.area.areaId}
 
 			</if>
+			<if test="shopCondition.shopCategory != null
+			and shopCondition.shopCategory.parent!=null
+			and shopCondition.shopCategory.parent.shopCategoryId !=null">
+				and s.shop_category_id in (select shop_category_id from
+				tb_shop_category
+				WHERE parent_id =
+				#{shopCondition.shopCategory.parent.shopCategoryId})
+			</if>
+
 			<if test="shopCondition.shopName!= null	">
 				and s.shop_name like'%${shopCondition.shopName}%'
 

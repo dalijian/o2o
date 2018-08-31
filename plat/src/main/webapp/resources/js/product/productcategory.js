@@ -7,16 +7,15 @@ function getQueryString(parameter) {
 }
 
 
-
-
 $(function () {
     getList();
 
 
 });
-var getListUrl= '/platform/productadmin/getproductcategory';
+var getListUrl = '/platform/productadmin/getproductcategory';
 var addUrl = '/platform/productadmin/addproductcategory';
 var deleteUrl = '/platform/productadmin/removeproductcategory';
+
 /*
 拿到商品分类列表
  */
@@ -36,8 +35,9 @@ function getList() {
 
 }
 
-function handleList(productList) {
-    productList.map(function (item, index) {
+//添加商品类别记录
+function handleList(productCategoryList) {
+    productCategoryList.map(function (item, index) {
         var $html = $(`<div class= "row row-shop now">
             <div class="col-40">${item.productCategoryName}</div>
             <div class="col-40">${item.priority}</div>
@@ -70,12 +70,11 @@ function addBatchProductCategory() {
 }
 
 
-
 /*
 提交批量添加的分类
  */
 function submitProductCategory() {
-	$.ajax({
+    $.ajax({
         url: addUrl,
         type: 'POST',
         data: getAddProductCategoryList(),
@@ -92,6 +91,7 @@ function submitProductCategory() {
     });
 
 }
+
 /*
 拿到批量添加的数据
  */
@@ -99,7 +99,7 @@ function getAddProductCategoryList() {
 
     var tempArr = $('.temp');
     var productCategoryList = [];
-    tempArr.map(function(index, item) {
+    tempArr.map(function (index, item) {
         var tempObj = {};
         tempObj.productCategoryName = $(item).find('#product_category_name').val();
         tempObj.priority = $(item).find('#product_category_priority').val();
@@ -111,36 +111,36 @@ function getAddProductCategoryList() {
     return productCategoryList;
 }
 
+//绑定 已添加 但是未提交   的商品分类  删除 点击 事件
 $(".category-wrap").on("click", ".row.temp .delete",
     function (e) {
         console.log($(this).parent().parent());
         $(this).parent().parent().remove();
 
     });
+//绑定删除已存在商品分类 点击事件
 $(".category-wrap").on("click", ".row.now .delete",
 
-function (e) {
-    var target =e.currentTarget;
-    $.confirm("确定吗", function () {
-        $.ajax({
-            url:deleteUrl,
-            type:"post",
-            data:{
-                productCategoryId:target.dataset.id
-            },
-            dataType:"json",
-            success: function (data) {
-                if (data.success) {
-                    $.toast("删除成功");
-                    $(".category-wrap").empty();
-                    getList();
-                }else {
-                    $.toast("删除失败");
+    function (e) {
+        var target = e.currentTarget;
+        $.confirm("确定吗", function () {
+            $.ajax({
+                url: deleteUrl,
+                type: "post",
+                data: {
+                    productCategoryId: target.dataset.id
+                },
+                dataType: "json",
+                success: function (data) {
+                    if (data.success) {
+                        $.toast("删除成功");
+                        $(".category-wrap").empty();
+                        getList();
+                    } else {
+                        $.toast("删除失败");
+                    }
                 }
-
-            }
-        })
+            })
+        });
 
     });
-
-});

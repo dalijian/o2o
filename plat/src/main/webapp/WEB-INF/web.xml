@@ -8,7 +8,10 @@
 	<display-name>platform</display-name>
 	<servlet>
 		<servlet-name>spring-dispatcher</servlet-name>
+
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<!--Tomcat 启动，对 DispatcherServlet 进行实例化，然后调用它的 init() 方法进行初始化-->
+		<!--主要作用是建立 WebApplicationContext 容器（有时也称上下文），并加载 SpringMVC 配置文件中定义的 Bean 到改容器中-->
 		<init-param>
 			<param-name>contextConfigLocation</param-name>
 			<param-value>classpath:spring/spring-*.xml</param-value>

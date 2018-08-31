@@ -11,7 +11,7 @@ $(function () {
 
     var shopId = getQueryString("shopId");
     /*
-    如果 shopId 存在 则 是谢盖 shop
+    如果 shopId 存在 则 是 修改 shop
     如果shopId 不存在 则是 添加shop
      */
     var isEdit = shopId ? true : false;
@@ -139,7 +139,7 @@ $(function () {
         formData.append("verifyCodeActual", verifyCodeActual);
 
         $.ajax({
-            url: (registerShopUrl),
+            url: (isEdit)?(editInfoUrl):(registerShopUrl),
             type: 'POST',
             data: formData,
             contentType: false,
