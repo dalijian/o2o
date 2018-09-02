@@ -49,6 +49,7 @@
 	normal_price,
 	promotion_price,
 	priority,
+	point,
 	create_time,
 	last_edit_time,
 	enable_status,
@@ -61,7 +62,7 @@
 	#{normalPrice},
 	#{promotionPrice},
 	#{priority},
-
+#{point}
 	#{createTime},
 	#{lastEditTime},
 	#{enableStatus},
@@ -96,6 +97,7 @@
 			<if test="normalPrice != null">normal_price=#{normalPrice},</if>
 			<if test="promotionPrice != null">promotion_price=#{promotionPrice},</if>
 			<if test="priority != null">priority=#{priority},</if>
+			<if test="point != null">point=#{point},</if>
 			<if test="lastEditTime != null">last_edit_time=#{lastEditTime},</if>
 			<if test="enableStatus != null">enable_status=#{enableStatus},</if>
 			<!--<if test="point != null">point=#{point},</if>暂时不支持point 积分-->
@@ -108,7 +110,8 @@
 		WHERE product_id = #{productId}
 		AND shop_id=#{shop.shopId}
 	</update>
-	<!--删除商品分类  将该分类下的product的category 设置成null-->
+
+	<!--删除商品分类   将该分类下的product的category 设置成null-->
 	<update id="updateProductCategoryToNull" parameterType="long">
 		UPDATE
 		tb_product
@@ -138,7 +141,7 @@
 		create_time,
 		last_edit_time,
 		enable_status,
-
+		point,
 		product_category_id,
 		shop_id
 		FROM
@@ -207,7 +210,7 @@
 		p.create_time,
 		p.last_edit_time,
 		p.enable_status,
-
+		p.point,
 		p.product_category_id,
 		p.shop_id,
 		pm.product_img_id,

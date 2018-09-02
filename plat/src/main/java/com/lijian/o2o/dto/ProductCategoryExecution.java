@@ -1,6 +1,6 @@
 package com.lijian.o2o.dto;
 
-import com.liijian.o2o.enums.ProductCategoryStateEnum;
+import com.lijian.o2o.enums.ProductCategoryStateEnum;
 import com.lijian.o2o.entity.ProductCategory;
 
 import java.util.List;

@@ -10,7 +10,6 @@ import javax.servlet.http.HttpServletRequest;
 
 import com.lijian.o2o.util.CodeUtil;
 import com.lijian.o2o.util.ImageHolder;
-import com.mysql.fabric.Response;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -22,7 +21,7 @@ import org.springframework.web.multipart.commons.CommonsMultipartFile;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 
 import com.google.gson.Gson;
-import com.liijian.o2o.enums.ShopStateEnum;
+import com.lijian.o2o.enums.ShopStateEnum;
 import com.lijian.o2o.dto.ShopExecution;
 import com.lijian.o2o.entity.Area;
 import com.lijian.o2o.entity.PersonInfo;

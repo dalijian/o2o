@@ -46,6 +46,16 @@ public class HttpServletRequestUtil {
 			e.printStackTrace();
 		}return null;
 	}
-	
 
+
+	public static boolean getBoolean(HttpServletRequest request, String needVerify) {
+		try{
+			// valueOf(String)返回保持指定 String 的值的 Long 对象
+			return Boolean.parseBoolean(request.getParameter(needVerify));
+
+		}catch(Exception e){
+			return false;
+		}
+
+	}
 }

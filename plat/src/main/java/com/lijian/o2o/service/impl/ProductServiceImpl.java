@@ -1,12 +1,11 @@
 package com.lijian.o2o.service.impl;
 
-import com.liijian.o2o.enums.ProductStateEnum;
+import com.lijian.o2o.enums.ProductStateEnum;
 import com.lijian.o2o.dao.ProductDao;
 import com.lijian.o2o.dao.ProductImgDao;
 import com.lijian.o2o.dto.ProductExecution;
 import com.lijian.o2o.entity.Product;
 import com.lijian.o2o.entity.ProductImg;
-import com.lijian.o2o.entity.Shop;
 import com.lijian.o2o.exception.ProductOperationException;
 import com.lijian.o2o.service.ProductService;
 import com.lijian.o2o.util.ImageHolder;

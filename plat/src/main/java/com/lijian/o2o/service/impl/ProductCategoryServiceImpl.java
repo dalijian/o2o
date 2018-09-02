@@ -1,15 +1,13 @@
 package com.lijian.o2o.service.impl;
 
-import com.liijian.o2o.enums.ProductCategoryStateEnum;
+import com.lijian.o2o.enums.ProductCategoryStateEnum;
 import com.lijian.o2o.dao.ProductCategoryDao;
 import com.lijian.o2o.dao.ProductDao;
-import com.lijian.o2o.dao.ShopCategoryDao;
 import com.lijian.o2o.dto.ProductCategoryExecution;
 import com.lijian.o2o.entity.ProductCategory;
 import com.lijian.o2o.entity.ShopCategory;
 import com.lijian.o2o.exception.ProductCategoryOperationException;
 import com.lijian.o2o.service.ProductCategoryService;
-import com.lijian.o2o.service.ShopCategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

@@ -6,13 +6,12 @@ import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.util.Date;
 
-import com.lijian.o2o.dao.ShopDao;
 import com.lijian.o2o.exception.ShopOperationException;
 import com.lijian.o2o.util.ImageHolder;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.liijian.o2o.enums.ShopStateEnum;
+import com.lijian.o2o.enums.ShopStateEnum;
 import com.lijian.o2o.dao.BaseTest;
 import com.lijian.o2o.dto.ShopExecution;
 import com.lijian.o2o.entity.Area;

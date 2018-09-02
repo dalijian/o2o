@@ -1,6 +1,6 @@
 package com.lijian.o2o.service;
 
-import com.liijian.o2o.enums.ProductStateEnum;
+import com.lijian.o2o.enums.ProductStateEnum;
 import com.lijian.o2o.dao.BaseTest;
 import com.lijian.o2o.dto.ProductExecution;
 import com.lijian.o2o.entity.*;

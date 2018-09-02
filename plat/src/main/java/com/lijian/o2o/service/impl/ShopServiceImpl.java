@@ -1,6 +1,5 @@
 package com.lijian.o2o.service.impl;
 
-import java.io.InputStream;
 import java.util.Date;
 import java.util.List;
 
@@ -10,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.liijian.o2o.enums.ShopStateEnum;
+import com.lijian.o2o.enums.ShopStateEnum;
 import com.lijian.o2o.dao.ShopDao;
 import com.lijian.o2o.dto.ShopExecution;
 import com.lijian.o2o.entity.Shop;

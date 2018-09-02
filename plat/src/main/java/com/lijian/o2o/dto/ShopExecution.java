@@ -2,7 +2,7 @@ package com.lijian.o2o.dto;
 
 import java.util.List;
 
-import com.liijian.o2o.enums.ShopStateEnum;
+import com.lijian.o2o.enums.ShopStateEnum;
 import com.lijian.o2o.entity.Shop;
 
 public class ShopExecution {

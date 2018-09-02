@@ -23,8 +23,8 @@ import org.springframework.web.multipart.commons.CommonsMultipartFile;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 
 import com.google.gson.Gson;
-import com.liijian.o2o.enums.ProductCategoryStateEnum;
-import com.liijian.o2o.enums.ProductStateEnum;
+import com.lijian.o2o.enums.ProductCategoryStateEnum;
+import com.lijian.o2o.enums.ProductStateEnum;
 import com.lijian.o2o.dto.ProductCategoryExecution;
 import com.lijian.o2o.dto.ProductExecution;
 import com.lijian.o2o.dto.Result;

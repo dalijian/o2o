@@ -4,7 +4,7 @@ package com.lijian.o2o.exception;
 
 import java.util.List;
 
-import com.liijian.o2o.enums.ProductCategoryStateEnum;
+import com.lijian.o2o.enums.ProductCategoryStateEnum;
 import com.lijian.o2o.entity.ProductCategory;
 
 public class ProductCategoryExecution {
